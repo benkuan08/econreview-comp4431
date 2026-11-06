@@ -1,0 +1,13 @@
+# Linux / Python 3.12. Install CUDA-enabled PyTorch separately as shown in README.
+# The completed remote GPU run used this stack with PyTorch 2.8.0+cu128.
+# Tokenizer, Qwen architecture, Trainer and generation APIs.
+transformers==5.3.0
+# Add/load LoRA adapters while keeping the original 9B weights frozen.
+peft==0.18.1
+# Device and mixed-precision support used internally by Trainer.
+accelerate==1.12.0
+# Store/load model and adapter tensors in the safetensors format.
+safetensors>=0.5.3,<1
+# Gated-delta attention kernels used in the completed run. Pinning avoids a
+# newer FLA release upgrading Transformers beyond the version above.
+flash-linear-attention==0.4.2

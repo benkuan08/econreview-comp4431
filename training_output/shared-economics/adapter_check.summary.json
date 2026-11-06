@@ -1,0 +1,14 @@
+{
+  "task": "rubric",
+  "split": "validation",
+  "count": 1,
+  "model": "models/Qwen3.5-9B-Base",
+  "revision_requested": "main",
+  "model_commit": null,
+  "adapter": "runs/shared-economics/adapter",
+  "normal_stop_rate": 1.0,
+  "json_valid_rate": 1.0,
+  "schema_valid_rate": 1.0,
+  "known_kp_ids_rate": 0.0,
+  "limitation": "Format and ID checks do not measure grading accuracy. Expert review is required."
+}

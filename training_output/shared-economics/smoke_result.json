@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "steps": 2,
+  "micro_batch": 4,
+  "training_losses": [
+    1.634186863899231,
+    1.6063849925994873
+  ],
+  "validation_loss": 1.664011836051941,
+  "max_train_tokens": 1359,
+  "max_validation_tokens": 1300,
+  "peak_allocated_GiB": 34.20076370239258,
+  "peak_reserved_GiB": 37.4765625,
+  "elapsed_seconds": 28.7,
+  "adapter_weights_updated": true,
+  "full_run_starts_from_original_adapter": true
+}

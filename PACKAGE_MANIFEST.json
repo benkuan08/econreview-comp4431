@@ -1,0 +1,440 @@
+{
+  "project": "econreview-comp4431",
+  "created_at_utc": "2026-11-06T05:14:42.043061+00:00",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 284,
+      "sha256": "2a1dd260db942a48c8a1bc244c7b6bd6c34f018ee4830c50f2947493d918b025"
+    },
+    {
+      "path": "backend/.env.example",
+      "bytes": 716,
+      "sha256": "e4554b51e1036bc986a2a2fa023979748809f850ffafacffa642103f9376da62"
+    },
+    {
+      "path": "backend/__init__.py",
+      "bytes": 56,
+      "sha256": "478510944b5cabaa2f85a88bb7c52e10616847e140dd0f05aebf59c794650fe7"
+    },
+    {
+      "path": "backend/app.py",
+      "bytes": 20683,
+      "sha256": "026e8cbae0bc37dc73b15b3136d7f701ba2cca25d980f6e90fc1cf6ada89865f"
+    },
+    {
+      "path": "backend/catalog.py",
+      "bytes": 3242,
+      "sha256": "6678950fbcf1a911f1714fb558896a82a017fee3afa1fc7a923e6bb4789b48fb"
+    },
+    {
+      "path": "backend/config.py",
+      "bytes": 1670,
+      "sha256": "e178ea6ef74fd38f4866745771ebe0cb779b979f7e243ddf92f4a2efa630b6b1"
+    },
+    {
+      "path": "backend/db.py",
+      "bytes": 6562,
+      "sha256": "6fdd4774a6b692296273a931044d2306486db2d85b1342a879cd57a5c13cf1d6"
+    },
+    {
+      "path": "backend/gpu_service.py",
+      "bytes": 2124,
+      "sha256": "6d9d1435d58159c4539f3d298d619fddf9ad7cf664245a7f6734f267e92b7013"
+    },
+    {
+      "path": "backend/jobs.py",
+      "bytes": 6760,
+      "sha256": "6eb73b16cfde0424c6f8e8d5d8485d8667a15d6f5d2d515d20471f0c4aafec4b"
+    },
+    {
+      "path": "backend/ocr.py",
+      "bytes": 6909,
+      "sha256": "abf6d787bc6720fa55370c1e030400c0a1bedab594b38c23f50dcd0c657d7f59"
+    },
+    {
+      "path": "backend/README.md",
+      "bytes": 9230,
+      "sha256": "132df85308e92516beca93b3085ace4f69fb5c495cb0443c8a64c7d1a39639de"
+    },
+    {
+      "path": "backend/requirements.lock.txt",
+      "bytes": 975,
+      "sha256": "d1e00d5a2e3ca63e79bdfd506bea26e31d1dde8de737b6764802cda74bd32a93"
+    },
+    {
+      "path": "backend/requirements.txt",
+      "bytes": 233,
+      "sha256": "fc1f5216c0b1aac67dcd2e0a7f8bb63e39601e3ee2228575c3a502ce39f43878"
+    },
+    {
+      "path": "backend/roles.py",
+      "bytes": 7537,
+      "sha256": "58a5a6dcb066978731dab5c4fb22299e2f85299dbe320fd32f85db1d13b70f43"
+    },
+    {
+      "path": "backend/run.ps1",
+      "bytes": 457,
+      "sha256": "f0a1f89151afff405117855de211439658af9128a9eef5cfb2601fb87d186d84"
+    },
+    {
+      "path": "backend/schemas.py",
+      "bytes": 3228,
+      "sha256": "1977d0805c83f4618849a20124155849bbce1eb61dc32ca55dcbf3bd4ca684db"
+    },
+    {
+      "path": "backend/tests/test_local.py",
+      "bytes": 13510,
+      "sha256": "241248cd4e8c17612d4b46d317840dd1406c3178ce60ccebc60279b926a2d3f2"
+    },
+    {
+      "path": "backend/tests/test_providers.py",
+      "bytes": 2984,
+      "sha256": "c40b1f0a55514029b7860df7e3dda44a1f1efc90f8e130588fd8c7763b85c41f"
+    },
+    {
+      "path": "backend/tutoring.py",
+      "bytes": 6111,
+      "sha256": "705a5ed4c96ff846b764e6988e5183a89c0711772f3213c50f784d63ebd8b8c8"
+    },
+    {
+      "path": "frontend/app.js",
+      "bytes": 51831,
+      "sha256": "920b05267e62b36bdd6b118276e7fed4b841545fae0039df16fa6badbfa677ef"
+    },
+    {
+      "path": "frontend/assets/favicon.svg",
+      "bytes": 245,
+      "sha256": "bade92fd2f8d98a8891c4eaa2f3f9bc08a4d69155db9298b3af9ffd385468e42"
+    },
+    {
+      "path": "frontend/assets/polyu-logo.svg",
+      "bytes": 183614,
+      "sha256": "d3ed4ff7cd62dfed843930bedc80b6c1533de07a3c798b6d6477c212332036c5"
+    },
+    {
+      "path": "frontend/assets/README.md",
+      "bytes": 711,
+      "sha256": "62cc555dc1e29c5be0f6bbe570bf0022c666a43966dc30d12d92d6b0c44bcef0"
+    },
+    {
+      "path": "frontend/demo.js",
+      "bytes": 2143,
+      "sha256": "a869c194264add3e4a872d00d7a4573567b76e02dfcc6a1ded8dbaf2360e4266"
+    },
+    {
+      "path": "frontend/icons.js",
+      "bytes": 2373,
+      "sha256": "fec127996a6c92516bee568e105ac6be14906ae654f40028bc9aa7a894432092"
+    },
+    {
+      "path": "frontend/index.html",
+      "bytes": 931,
+      "sha256": "1792965c3a3c10838718013480ad2e130e0b4394ae864bda5a04cfe098bb357e"
+    },
+    {
+      "path": "frontend/preview.jpg",
+      "bytes": 109697,
+      "sha256": "7f50c2655f9a2ad8f7416bd1d7f4951715fd12e06cf90f55c3a6a9fa21dbaea4"
+    },
+    {
+      "path": "frontend/README.md",
+      "bytes": 834,
+      "sha256": "2d748731af372408e2cd023869670c02f6da9b4e4860c90ca58b886e70e82c73"
+    },
+    {
+      "path": "frontend/styles.css",
+      "bytes": 35642,
+      "sha256": "8f7e22b02be45ec321c28a0a0defd5f3b367be73fa5231026eba58e8154864a5"
+    },
+    {
+      "path": "knowledge_graph.json",
+      "bytes": 74444,
+      "sha256": "42b78c5bb175326954e86951dfd90139b5340b3c40b823142422647247aeecff"
+    },
+    {
+      "path": "Prompts/diagnoser.txt",
+      "bytes": 1110,
+      "sha256": "5fa5e247ae648d10431d7ae721cb0e7bb9e3869df7204a88fcae131b2e46b8a2"
+    },
+    {
+      "path": "Prompts/grader.txt",
+      "bytes": 1341,
+      "sha256": "98c83e4e0ec6047c5d7fec1cb09218ff35752d46269d0998e71499fa1cfd3429"
+    },
+    {
+      "path": "Prompts/probe_judge.txt",
+      "bytes": 764,
+      "sha256": "e5e7de28af3c61d9f6d43eb7d24a049edafd1e813bac9893d154047cca93b93b"
+    },
+    {
+      "path": "Prompts/prober.txt",
+      "bytes": 857,
+      "sha256": "0fffe34786797382e285f1d76a47c2ef8570d2c3b0840d25d841adba9b573dbe"
+    },
+    {
+      "path": "Prompts/rubric_reference.txt",
+      "bytes": 780,
+      "sha256": "5c2d85dc14813bf313fc96593af5d1a1eb8ea5fb23bcc90f39438d9393c3e903"
+    },
+    {
+      "path": "Prompts/tutor.txt",
+      "bytes": 1138,
+      "sha256": "8c4b99028f992351453ae464886a888fd030bc69329567533e078b4e3699996e"
+    },
+    {
+      "path": "question_records.training.json",
+      "bytes": 590293,
+      "sha256": "6fb914247db4c0f9675203a9c3f32bc098bd1409036e669094b5de10d246aa6e"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5897,
+      "sha256": "2a276bf7a4d3934c10cd8f44461cf1ef9d2a4d29a5a892b8659651df95b0e879"
+    },
+    {
+      "path": "scripts/download_adapter.py",
+      "bytes": 2415,
+      "sha256": "80323729ac1dee01d3d552b2a9aaff15f650bf44c24852cdb4432b9c27936732"
+    },
+    {
+      "path": "scripts/package_project.py",
+      "bytes": 5286,
+      "sha256": "ab4645e1f2576cf8c8f5e5677a66951872f4a99ce7c2bfb3d9b2dcdc2077b164"
+    },
+    {
+      "path": "training/data.py",
+      "bytes": 14888,
+      "sha256": "a25367dd84b46a7efa4db925bf6cb47d6a586bf98eafbfe30a6bff4f732613cd"
+    },
+    {
+      "path": "training/evaluate.py",
+      "bytes": 7560,
+      "sha256": "4e605ec1bde2618132a0b2052fce3af085a3501711e65b043fbcc59433e9b088"
+    },
+    {
+      "path": "training/inference.py",
+      "bytes": 4697,
+      "sha256": "0d15badcaa9d71516ac737b7938da197214cfb36b37042678ca9243bc1d55bf0"
+    },
+    {
+      "path": "training/predict_role.py",
+      "bytes": 2439,
+      "sha256": "f98f357be6be4717205be06f9d16eab58656e1bea6cdaf7e8ee3cd0ef9ce660c"
+    },
+    {
+      "path": "training/README.md",
+      "bytes": 18497,
+      "sha256": "5c4a0773193ed827283b3f1d92f1e37500ee0b6bd07ee77f2b8f769f98b50d91"
+    },
+    {
+      "path": "training/requirements.txt",
+      "bytes": 668,
+      "sha256": "3ef09b1be6b8529e5dc7b5f6a2d09ab6476aebbab9c401f7682620323237475e"
+    },
+    {
+      "path": "training/train_lora.py",
+      "bytes": 11920,
+      "sha256": "3141b6f7de3df8a0605e9a8400965df540f347caea151f0dbaec6c76ae95d990"
+    },
+    {
+      "path": "training_output/shared-economics/adapter/adapter_config.json",
+      "bytes": 1175,
+      "sha256": "1639305bf1d697fe9005a3916d205045a75a6a65af1934df047a554d5fc9afb0"
+    },
+    {
+      "path": "training_output/shared-economics/adapter/chat_template.jinja",
+      "bytes": 7756,
+      "sha256": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715"
+    },
+    {
+      "path": "training_output/shared-economics/adapter/README.md",
+      "bytes": 933,
+      "sha256": "73c69e177479fc9bf96d931a230172280f94bac94a0a4fe436744906862e67ce"
+    },
+    {
+      "path": "training_output/shared-economics/adapter/source_model.json",
+      "bytes": 87,
+      "sha256": "53766d23b009f8bb2f2488839f07af985d6afd899622ca26af7c8bf963bd0811"
+    },
+    {
+      "path": "training_output/shared-economics/adapter/tokenizer.json",
+      "bytes": 19989343,
+      "sha256": "87a7830d63fcf43bf241c3c5242e96e62dd3fdc29224ca26fed8ea333db72de4"
+    },
+    {
+      "path": "training_output/shared-economics/adapter/tokenizer_config.json",
+      "bytes": 1101,
+      "sha256": "4e5fdef23437b31196353a689e05ed86e63f668682a1c9fed628d7630cba0982"
+    },
+    {
+      "path": "training_output/shared-economics/adapter/training_args.bin",
+      "bytes": 5265,
+      "sha256": "49ad11b69a90184b5daac2d45b837fd51602905f0d4334fee428d4d098b63d53"
+    },
+    {
+      "path": "training_output/shared-economics/adapter_check.jsonl",
+      "bytes": 911,
+      "sha256": "bfc9433b053cd818c355d815ef62fdbda663603dabd3e524cd4766ea23fca9fc"
+    },
+    {
+      "path": "training_output/shared-economics/adapter_check.summary.json",
+      "bytes": 409,
+      "sha256": "2caad26d6cda5846bd66f18fc506f6737f030637993c706407c890e9d38add4c"
+    },
+    {
+      "path": "training_output/shared-economics/code/Prompts/diagnoser.txt",
+      "bytes": 1110,
+      "sha256": "5fa5e247ae648d10431d7ae721cb0e7bb9e3869df7204a88fcae131b2e46b8a2"
+    },
+    {
+      "path": "training_output/shared-economics/code/Prompts/grader.txt",
+      "bytes": 1341,
+      "sha256": "98c83e4e0ec6047c5d7fec1cb09218ff35752d46269d0998e71499fa1cfd3429"
+    },
+    {
+      "path": "training_output/shared-economics/code/Prompts/probe_judge.txt",
+      "bytes": 764,
+      "sha256": "e5e7de28af3c61d9f6d43eb7d24a049edafd1e813bac9893d154047cca93b93b"
+    },
+    {
+      "path": "training_output/shared-economics/code/Prompts/prober.txt",
+      "bytes": 857,
+      "sha256": "0fffe34786797382e285f1d76a47c2ef8570d2c3b0840d25d841adba9b573dbe"
+    },
+    {
+      "path": "training_output/shared-economics/code/Prompts/rubric_reference.txt",
+      "bytes": 780,
+      "sha256": "5c2d85dc14813bf313fc96593af5d1a1eb8ea5fb23bcc90f39438d9393c3e903"
+    },
+    {
+      "path": "training_output/shared-economics/code/Prompts/tutor.txt",
+      "bytes": 1138,
+      "sha256": "8c4b99028f992351453ae464886a888fd030bc69329567533e078b4e3699996e"
+    },
+    {
+      "path": "training_output/shared-economics/code/training/data.py",
+      "bytes": 14731,
+      "sha256": "c7a30af2b5557e2ecdf5d7f8279c382289736a5c2016a07c3d5b6eafcee771f6"
+    },
+    {
+      "path": "training_output/shared-economics/code/training/evaluate.py",
+      "bytes": 7560,
+      "sha256": "4e605ec1bde2618132a0b2052fce3af085a3501711e65b043fbcc59433e9b088"
+    },
+    {
+      "path": "training_output/shared-economics/code/training/inference.py",
+      "bytes": 4697,
+      "sha256": "0d15badcaa9d71516ac737b7938da197214cfb36b37042678ca9243bc1d55bf0"
+    },
+    {
+      "path": "training_output/shared-economics/code/training/predict_role.py",
+      "bytes": 2439,
+      "sha256": "f98f357be6be4717205be06f9d16eab58656e1bea6cdaf7e8ee3cd0ef9ce660c"
+    },
+    {
+      "path": "training_output/shared-economics/code/training/README.md",
+      "bytes": 17177,
+      "sha256": "25d4fd780835fa60e31097652a442a27f2bf20925fae4bc2ea963956a1a5f698"
+    },
+    {
+      "path": "training_output/shared-economics/code/training/requirements.txt",
+      "bytes": 503,
+      "sha256": "e07f2087f8536bec84f148bdde7c5a9047e0582ec6bda339bb0f7c072e8464df"
+    },
+    {
+      "path": "training_output/shared-economics/code/training/train_lora.py",
+      "bytes": 11920,
+      "sha256": "3141b6f7de3df8a0605e9a8400965df540f347caea151f0dbaec6c76ae95d990"
+    },
+    {
+      "path": "training_output/shared-economics/environment.txt",
+      "bytes": 5225,
+      "sha256": "203c00571019707bf064dd661f25ac55ad7ed3ce8a834c2a9cce6bd44d69802d"
+    },
+    {
+      "path": "training_output/shared-economics/hf_upload.json",
+      "bytes": 1674,
+      "sha256": "eef40fad80a97790bddc614d9fe8599d79d5e5dcc1c142a71db7c8fc5ecbcaf8"
+    },
+    {
+      "path": "training_output/shared-economics/memory.json",
+      "bytes": 83,
+      "sha256": "720ba0950b6230e68d1f6dfd440eac4210af366ec5097c1d4383b8ec529ee41a"
+    },
+    {
+      "path": "training_output/shared-economics/model_info.json",
+      "bytes": 87,
+      "sha256": "53766d23b009f8bb2f2488839f07af985d6afd899622ca26af7c8bf963bd0811"
+    },
+    {
+      "path": "training_output/shared-economics/RESULTS.md",
+      "bytes": 1234,
+      "sha256": "d8e614a54bd58be32e4d12f6500493f182db907d2352f906801e1465225d3812"
+    },
+    {
+      "path": "training_output/shared-economics/run_manifest.json",
+      "bytes": 27679,
+      "sha256": "09d2e9b1b8ffc01633757c267436423da4550900043d14435310b88e96a2c624"
+    },
+    {
+      "path": "training_output/shared-economics/run_summary.json",
+      "bytes": 2245,
+      "sha256": "884cc44e2c68c442addd3600b4c2d1b9eed8405e2579440aed1ef71235bb93c0"
+    },
+    {
+      "path": "training_output/shared-economics/runtime/download_model.py",
+      "bytes": 769,
+      "sha256": "12d0815f5f24498ce76d6edcd67d2a4a8447c6429ebe6e6d7e8e35f962bfd69b"
+    },
+    {
+      "path": "training_output/shared-economics/runtime/download_parallel.py",
+      "bytes": 3947,
+      "sha256": "a32ba9f2d3783dd760ec065c1033e8eb23c7be4738b4934202d6e111d32e14f0"
+    },
+    {
+      "path": "training_output/shared-economics/runtime/kernel-warmup.json",
+      "bytes": 124,
+      "sha256": "10bcfcb902655076380c37e130fc883cda014c948618f8f87f1c24d0d24b7e83"
+    },
+    {
+      "path": "training_output/shared-economics/runtime/run_training.py",
+      "bytes": 4172,
+      "sha256": "9ce90c51ebd3055ee8bcb232d4df8c87d45ce49d40a50fd5021c4a43927126ab"
+    },
+    {
+      "path": "training_output/shared-economics/runtime/train_pipeline.sh",
+      "bytes": 622,
+      "sha256": "6fcb1ffbb4cb3162098d5d9279e5af8c0080adbf8d9594c8508792c15d524236"
+    },
+    {
+      "path": "training_output/shared-economics/runtime/weight_manifest.json",
+      "bytes": 650,
+      "sha256": "f77cd2b580faeee771ddbc349b41d467958b3127e9d4a8904c7664c36d075f7e"
+    },
+    {
+      "path": "training_output/shared-economics/smoke_result.json",
+      "bytes": 418,
+      "sha256": "6df5f5ee6f7a7960407a8fbdf34b445605d796983e39dcb553ecbd0280e8aa8d"
+    },
+    {
+      "path": "training_output/shared-economics/training.log",
+      "bytes": 13082,
+      "sha256": "6c5f4ffa57ee81294ecc7808a6b73a0ce9ccedea75200ab5acdf619882ed35b8"
+    }
+  ],
+  "excluded": [
+    ".venv-backend",
+    "backend_data",
+    ".env and credentials",
+    "caches",
+    "training_output/shared-economics/adapter/adapter_model.safetensors"
+  ],
+  "adapter": {
+    "repository": "benjaik/igcse-economics-qwen3.5-9b-lora-20261105",
+    "revision": "6b65de35a9efe4c003839753eac1dd09356940ae",
+    "sha256": "0ce0d8be2d3a483dc44ffbb65107a7690db7b79989b0d56397866f648f8c142a",
+    "bytes": 173188512,
+    "restore_command": "python scripts/download_adapter.py"
+  }
+}

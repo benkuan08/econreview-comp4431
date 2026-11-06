@@ -1,0 +1,15 @@
+.venv-backend/
+.backend-deps/
+.env
+backend/.env
+backend_data/
+__pycache__/
+*.pyc
+.pytest_cache/
+exports/
+.cache/
+*.log.tmp
+*.pem
+*.key
+# Published separately on Hugging Face; restore with scripts/download_adapter.py.
+training_output/shared-economics/adapter/adapter_model.safetensors

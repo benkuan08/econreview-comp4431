@@ -1,0 +1,1696 @@
+{
+  "4EC1.1.1.1.a": {
+    "name": "Scarcity, wants, resources and choice",
+    "prereqs": [],
+    "probes": [
+      {
+        "q": "Why does scarcity require consumers, firms and governments to make choices?",
+        "answer": "Resources are limited while wants are unlimited, so using resources for one purpose prevents some other wants from being met."
+      },
+      {
+        "q": "Does a wealthy country still face scarcity? Explain.",
+        "answer": "Yes. Even a wealthy country has limited time, labour, land and capital relative to all possible wants, so it must choose how to use them."
+      }
+    ],
+    "misconceptions": [
+      "Thinks scarcity exists only in low-income households or countries.",
+      "Confuses a temporary shortage at a particular price with the general economic problem of scarcity.",
+      "Assumes unlimited wants imply unlimited resources."
+    ]
+  },
+  "4EC1.1.2.1.a": {
+    "name": "Production and the four factors of production",
+    "prereqs": [],
+    "probes": [
+      {
+        "q": "Classify a forest, a woodcutter, a saw and an entrepreneur as factors of production.",
+        "answer": "The forest is land, the woodcutter supplies labour, the manufactured saw is capital, and the entrepreneur supplies enterprise by organising resources and bearing business risk."
+      },
+      {
+        "q": "Why is money used to buy a machine different from the machine as productive capital?",
+        "answer": "Money finances the purchase. The machine is the manufactured resource that directly helps production."
+      },
+      {
+        "q": "What does production mean?",
+        "answer": "Using or transforming resources to provide goods and services."
+      }
+    ],
+    "misconceptions": [
+      "Defines land only as the physical area of a factory site, excluding natural resources.",
+      "Classifies the worker as capital because the worker uses a machine.",
+      "Treats finance itself as the manufactured productive equipment.",
+      "Omits organisation and risk from the role of enterprise."
+    ]
+  },
+  "4EC1.1.2.3.a": {
+    "name": "Business revenue, costs, averages and profit",
+    "prereqs": [],
+    "probes": [
+      {
+        "q": "A business sells 80 units for $5 each. Calculate total revenue.",
+        "answer": "Total revenue = price × quantity = $5 × 80 = $400."
+      },
+      {
+        "q": "Fixed costs are $100 and variable cost is $2 for each of 80 units. Calculate total costs.",
+        "answer": "Total variable cost = $2 × 80 = $160. Total costs = $100 + $160 = $260."
+      },
+      {
+        "q": "Revenue is $400 and total costs are $260. Calculate profit.",
+        "answer": "Profit = total revenue - total costs = $140."
+      },
+      {
+        "q": "Total costs are $260 for 80 units. Calculate average total cost.",
+        "answer": "Average total cost = total costs / output = $260 / 80 = $3.25 per unit."
+      },
+      {
+        "q": "What distinguishes a fixed cost from a variable cost over a given period and capacity range?",
+        "answer": "A fixed cost does not change with output in that range, while a variable cost changes as output changes."
+      },
+      {
+        "q": "Revenue is €3,600 and the price is €40 per cake. Calculate quantity sold.",
+        "answer": "Quantity = revenue / unit price = €3,600 / €40 = 90 cakes."
+      }
+    ],
+    "misconceptions": [
+      "Treats total revenue as profit.",
+      "Adds variable cost per unit directly to fixed costs without multiplying by output.",
+      "Multiplies fixed costs by output when they are already a total for the period.",
+      "Confuses average cost with total cost.",
+      "Labels a quantity of products as a currency amount."
+    ]
+  },
+  "4EC1.1.1.3.a": {
+    "name": "Demand and willingness and ability to buy",
+    "prereqs": [],
+    "probes": [
+      {
+        "q": "What does demand mean in economics?",
+        "answer": "The quantities of a good or service consumers are willing and able to buy at given prices over a given period."
+      },
+      {
+        "q": "Does wanting a product without being able to pay for it establish effective demand?",
+        "answer": "No. Economic demand requires both willingness and ability to buy."
+      }
+    ],
+    "misconceptions": [
+      "Defines demand as desire alone.",
+      "Confuses consumers’ demand with producers’ willingness to sell."
+    ]
+  },
+  "4EC1.1.1.3.d": {
+    "name": "Supply and willingness and ability to sell",
+    "prereqs": [],
+    "probes": [
+      {
+        "q": "What does supply mean in economics?",
+        "answer": "The quantities producers are willing and able to offer for sale at given prices over a given period."
+      },
+      {
+        "q": "Does the number of products customers want to buy define supply?",
+        "answer": "No. Supply concerns producers’ willingness and ability to sell. Customers’ purchases concern demand."
+      }
+    ],
+    "misconceptions": [
+      "Defines supply using buyers’ preferences.",
+      "Treats the stock of a resource as identical to the quantity offered for sale at a given price."
+    ]
+  },
+  "KP_PERCENT_CHANGE": {
+    "name": "Calculating and interpreting percentage change",
+    "prereqs": [],
+    "probes": [
+      {
+        "q": "A price rises from $4 to $5. Calculate the percentage change.",
+        "answer": "(5 - 4) / 4 × 100 = 25%. Use the original price as the denominator."
+      },
+      {
+        "q": "Sales fall from 200 to 170 units. What is the percentage change?",
+        "answer": "(170 - 200) / 200 × 100 = -15%, a 15% decrease."
+      },
+      {
+        "q": "A rate rises from 10% to 12%. Distinguish the percentage-point change from the percentage increase.",
+        "answer": "The change is 2 percentage points. Relative to the original rate, the increase is (12 - 10) / 10 × 100 = 20%."
+      }
+    ],
+    "misconceptions": [
+      "Divides by the new value instead of the original value.",
+      "Reports the absolute change as a percentage change.",
+      "Omits the negative sign when a value falls.",
+      "Treats a percentage-point change as the same numerical percentage increase."
+    ]
+  },
+  "4EC1.1.1.5.b": {
+    "name": "Public and private sector ownership",
+    "prereqs": [],
+    "probes": [
+      {
+        "q": "Distinguish the public sector from the private sector.",
+        "answer": "The public sector is owned or controlled by government. The private sector is owned or controlled by private individuals or groups."
+      },
+      {
+        "q": "Does a private pharmacy become publicly owned solely because government pays it to provide vaccinations?",
+        "answer": "No. Government funding of a service does not by itself transfer ownership or control of the provider."
+      }
+    ],
+    "misconceptions": [
+      "Uses the source of one payment as sufficient evidence of ownership.",
+      "Confuses private ownership with a public company’s stock-market listing."
+    ]
+  },
+  "4EC1.1.1.5.g": {
+    "name": "Public goods, non-excludability and free riding",
+    "prereqs": [],
+    "probes": [
+      {
+        "q": "Who is a free rider?",
+        "answer": "A person who receives a benefit from a good or resource without paying or contributing towards its provision."
+      },
+      {
+        "q": "Why can national defence create a free-rider problem?",
+        "answer": "People can receive protection even after refusing to pay voluntarily. Non-excludability weakens the incentive to contribute and makes private cost recovery difficult."
+      },
+      {
+        "q": "Distinguish non-rivalry from non-excludability.",
+        "answer": "Non-rivalry means one person’s use does not reduce the amount available to others. Non-excludability means preventing non-payers from benefiting is impractical or impossible."
+      },
+      {
+        "q": "Is every publicly funded service a pure public good?",
+        "answer": "No. Public-good status depends on the characteristics of use. A crowded park can be rival and some services can exclude non-payers."
+      }
+    ],
+    "misconceptions": [
+      "Uses non-rivalry alone to explain why non-payers cannot be excluded.",
+      "Classifies a good as public solely because government funds it.",
+      "Defines a free rider as a resource rather than a person benefiting without paying."
+    ]
+  },
+  "4EC1.1.1.6.a": {
+    "name": "External costs",
+    "prereqs": [],
+    "probes": [
+      {
+        "q": "What makes a cost external?",
+        "answer": "It falls on a third party and is not fully borne or compensated by the parties making the production or consumption decision."
+      },
+      {
+        "q": "Is a firm’s large wage bill an external cost merely because it is expensive?",
+        "answer": "No. Wages paid by the firm are a private production cost. Uncompensated harm to nearby people can be external."
+      }
+    ],
+    "misconceptions": [
+      "Calls any large or undesirable cost an external cost.",
+      "Assumes a person who buys some output cannot also suffer separate uncompensated pollution harm."
+    ]
+  },
+  "4EC1.1.1.6.c": {
+    "name": "External benefits",
+    "prereqs": [],
+    "probes": [
+      {
+        "q": "What makes a benefit external?",
+        "answer": "A third party receives a positive spillover that is not fully reflected in the private benefit or payment of the person making the decision."
+      },
+      {
+        "q": "Is a patient feeling better after treatment by itself an external benefit?",
+        "answer": "That is a private benefit to the patient. Reduced disease transmission to other people is an example of an external benefit."
+      }
+    ],
+    "misconceptions": [
+      "Counts the buyer’s own enjoyment or health gain as an external benefit without a third-party effect.",
+      "Assumes an activity must have only private benefits or only external benefits."
+    ]
+  },
+  "4EC1.1.1.1.b": {
+    "name": "Opportunity cost and economic agents",
+    "prereqs": [
+      "4EC1.1.1.1.a"
+    ],
+    "probes": [
+      {
+        "q": "A council uses its available budget for a hospital. Its next best alternative was a school. What is the opportunity cost?",
+        "answer": "The school forgone, or the benefits that school would have provided."
+      },
+      {
+        "q": "Is the purchase price always the opportunity cost of a delivery van?",
+        "answer": "Opportunity cost is the next best alternative use of the resources, such as other equipment the firm gives up. The money price can help measure the resources sacrificed, but does not by itself identify that alternative."
+      }
+    ],
+    "misconceptions": [
+      "Identifies only the price of the chosen option.",
+      "Lists every rejected alternative instead of the next best alternative.",
+      "Names an alternative without explaining what is forgone when the choice is made."
+    ]
+  },
+  "4EC1.1.1.2.a": {
+    "name": "Consumers, producers and assumptions about their aims",
+    "prereqs": [
+      "4EC1.1.1.1.a"
+    ],
+    "probes": [
+      {
+        "q": "Distinguish a consumer from a producer.",
+        "answer": "A consumer uses goods and services to satisfy wants. A producer makes or provides goods and services."
+      },
+      {
+        "q": "What aims are usually assumed for consumers and businesses in the basic model?",
+        "answer": "Consumers aim to maximise their benefit, while businesses aim to maximise profit. These are modelling assumptions."
+      },
+      {
+        "q": "Does maximising sales necessarily maximise profit?",
+        "answer": "No. Profit is total revenue minus total costs, so extra sales may add costs or require price reductions that reduce profit."
+      }
+    ],
+    "misconceptions": [
+      "Treats every buyer, including a business purchasing inputs, as a final consumer.",
+      "Treats profit, revenue and the quantity sold as interchangeable.",
+      "Treats the model’s assumed aim as a description of every real decision."
+    ]
+  },
+  "4EC1.1.1.1.e": {
+    "name": "Causes of changes in productive potential",
+    "prereqs": [
+      "4EC1.1.1.1.a",
+      "4EC1.1.2.1.a"
+    ],
+    "probes": [
+      {
+        "q": "How can improved production technology cause positive economic growth?",
+        "answer": "It can allow more output from available resources, increasing the economy’s productive potential."
+      },
+      {
+        "q": "What could happen to productive potential if skilled workers leave and are not replaced?",
+        "answer": "Productive potential may fall because the economy loses productive labour and skills. The effect depends on the resources lost and any offsetting changes."
+      }
+    ],
+    "misconceptions": [
+      "Treats rising prices alone as an increase in productive potential.",
+      "Assumes producing more by using idle resources proves that the frontier has shifted."
+    ]
+  },
+  "4EC1.1.2.1.b": {
+    "name": "Primary, secondary and tertiary sectors",
+    "prereqs": [
+      "4EC1.1.2.1.a"
+    ],
+    "probes": [
+      {
+        "q": "Classify growing wheat, manufacturing furniture and providing nursing services by sector.",
+        "answer": "Growing wheat is primary, manufacturing furniture is secondary, and providing nursing services is tertiary."
+      },
+      {
+        "q": "Does a government-owned factory become part of the tertiary sector because the state owns it?",
+        "answer": "No. Sector classification concerns the productive activity, while public or private sector describes ownership."
+      }
+    ],
+    "misconceptions": [
+      "Classifies manufacturing as a tertiary activity.",
+      "Uses ownership to distinguish primary, secondary and tertiary production."
+    ]
+  },
+  "4EC1.1.2.2.a": {
+    "name": "Productivity and output relative to inputs",
+    "prereqs": [
+      "4EC1.1.2.1.a"
+    ],
+    "probes": [
+      {
+        "q": "Ten workers make 200 units per day. Calculate output per worker per day.",
+        "answer": "200 / 10 = 20 units per worker per day."
+      },
+      {
+        "q": "Output doubles from 100 to 200 while the number of workers doubles from 5 to 10. Has output per worker risen?",
+        "answer": "No. Output per worker remains 20. More total output alone does not establish higher labour productivity."
+      },
+      {
+        "q": "More farmland is brought into use and total wheat output increases. Must land productivity have risen?",
+        "answer": "No. Compare output per unit of land. More land can raise total output even when output per hectare stays unchanged or falls."
+      }
+    ],
+    "misconceptions": [
+      "Treats greater total output as sufficient proof of higher productivity.",
+      "Uses sales revenue as the definition of physical productivity.",
+      "Changes the input basis between two productivity comparisons."
+    ]
+  },
+  "4EC1.1.2.2.c": {
+    "name": "Division of labour and task specialisation",
+    "prereqs": [
+      "4EC1.1.2.1.a"
+    ],
+    "probes": [
+      {
+        "q": "What is division of labour in a factory?",
+        "answer": "Breaking production into tasks so that different workers specialise in particular stages."
+      },
+      {
+        "q": "If every worker makes the whole product from beginning to end, is that division of labour within production?",
+        "answer": "No. Division of labour separates the process into specialised tasks."
+      }
+    ],
+    "misconceptions": [
+      "Describes every worker completing the whole product as division of labour.",
+      "Confuses specialisation in tasks with simply employing more workers."
+    ]
+  },
+  "4EC1.1.2.3.b": {
+    "name": "Internal and external economies of scale",
+    "prereqs": [
+      "4EC1.1.2.3.a"
+    ],
+    "probes": [
+      {
+        "q": "A firm expands and average cost falls from $6 to $4 per unit. What does this illustrate?",
+        "answer": "Economies of scale, provided the lower average cost results from expansion. Total cost need not have fallen."
+      },
+      {
+        "q": "Why can purchasing inputs in bulk lower average cost?",
+        "answer": "The larger order may secure a lower price per input, reducing the input cost for each unit of output."
+      },
+      {
+        "q": "How do shared advertising costs create a marketing economy?",
+        "answer": "Advertising can support a larger volume of sales or several branches, spreading the cost over more output."
+      },
+      {
+        "q": "Distinguish a firm’s bulk-buying discount from an improved regional supplier network.",
+        "answer": "The discount arises from its own expansion and is an internal economy. A supplier network benefiting firms across an industry or area can create an external economy."
+      },
+      {
+        "q": "How can operating in different markets reduce risk?",
+        "answer": "Revenue from one activity may support the firm when another weakens, if the risks are not perfectly correlated. This does not eliminate shared shocks."
+      }
+    ],
+    "misconceptions": [
+      "Defines economies of scale as falling total costs.",
+      "Assumes expansion automatically lowers average cost.",
+      "Classifies an individual firm’s bulk buying as an external economy.",
+      "Assumes diversified markets can never decline together."
+    ]
+  },
+  "4EC1.1.2.4.c": {
+    "name": "Business growth, finance, diversification and takeovers",
+    "prereqs": [
+      "4EC1.1.2.3.a"
+    ],
+    "probes": [
+      {
+        "q": "What does finance mean for a business?",
+        "answer": "The money or funding available to support the business’s activities. It can come from sources such as owners, retained profit or borrowing."
+      },
+      {
+        "q": "How can access to finance affect a firm’s ability to open another branch?",
+        "answer": "Funds can pay for premises, equipment and staff. A lack of retained profit or affordable borrowing can prevent expansion."
+      },
+      {
+        "q": "What is a takeover?",
+        "answer": "One firm obtains control of another firm, for example by buying the controlling ownership interest."
+      },
+      {
+        "q": "Does buying a small shareholding automatically prove the buyer controls the other firm?",
+        "answer": "No. A financial interest can exist without control. The rights and agreement determine the degree of influence."
+      },
+      {
+        "q": "Why might a successful first branch fail to prove that a second branch will be profitable?",
+        "answer": "The new market may have different demand, competition and operating costs, and managing more sites may create additional difficulties."
+      }
+    ],
+    "misconceptions": [
+      "Treats expansion as guaranteed profit.",
+      "Assumes every share purchase is a takeover.",
+      "Confuses access to finance with profit itself or with the equipment it buys.",
+      "Assumes success in one location proves sufficient demand in another."
+    ]
+  },
+  "4EC1.1.1.3.b": {
+    "name": "Movements along and shifts of the demand curve",
+    "prereqs": [
+      "4EC1.1.1.3.a"
+    ],
+    "probes": [
+      {
+        "q": "The price of a good falls while other demand conditions remain unchanged. What happens?",
+        "answer": "Quantity demanded normally increases through an extension along the existing demand curve."
+      },
+      {
+        "q": "How does an increase in demand differ from an increase in quantity demanded caused by a price fall?",
+        "answer": "An increase in demand means more is wanted at each given price and shifts the curve right. A price fall causes a movement along the existing curve."
+      }
+    ],
+    "misconceptions": [
+      "Thinks a change in the good’s own price shifts its demand curve.",
+      "Uses demand and quantity demanded interchangeably when describing curve changes."
+    ]
+  },
+  "4EC1.1.1.4.o": {
+    "name": "Income elasticity of demand as responsiveness",
+    "prereqs": [
+      "4EC1.1.1.3.a"
+    ],
+    "probes": [
+      {
+        "q": "What does income elasticity of demand measure?",
+        "answer": "The responsiveness of quantity demanded to a change in consumer income, with other demand conditions held constant."
+      },
+      {
+        "q": "How does YED differ from PED?",
+        "answer": "YED uses an income change as the cause; PED uses a change in the good’s own price. Both measure a percentage quantity response."
+      }
+    ],
+    "misconceptions": [
+      "Uses a price change to define income elasticity.",
+      "Assumes rising income must increase demand for every good."
+    ]
+  },
+  "4EC1.1.1.3.e": {
+    "name": "Movements along and shifts of the supply curve",
+    "prereqs": [
+      "4EC1.1.1.3.d"
+    ],
+    "probes": [
+      {
+        "q": "The selling price rises while production conditions stay unchanged. What happens to quantity supplied?",
+        "answer": "Quantity supplied normally increases through an extension along the existing supply curve."
+      },
+      {
+        "q": "What does a rightward shift of supply mean?",
+        "answer": "Producers are willing and able to offer more at each given price because a non-price supply condition has changed."
+      }
+    ],
+    "misconceptions": [
+      "Calls an own-price movement a shift of the supply curve.",
+      "Assumes a higher quantity supplied always means production conditions improved."
+    ]
+  },
+  "4EC1.1.1.3.g": {
+    "name": "Market equilibrium price and quantity",
+    "prereqs": [
+      "4EC1.1.1.3.a",
+      "4EC1.1.1.3.d"
+    ],
+    "probes": [
+      {
+        "q": "What defines the equilibrium price in a market?",
+        "answer": "It is the price at which quantity demanded equals quantity supplied, so there is no excess demand or excess supply."
+      },
+      {
+        "q": "Demand increases while supply stays unchanged. Explain the likely price adjustment.",
+        "answer": "There is excess demand at the old price. Competition for available units puts upward pressure on price until quantities demanded and supplied match at a higher equilibrium price."
+      }
+    ],
+    "misconceptions": [
+      "Assumes equilibrium means price must be low or fair.",
+      "Assumes price returns to its original value after a permanent increase in demand with supply unchanged."
+    ]
+  },
+  "4EC1.1.2.5.b": {
+    "name": "Supply of labour, participation, skills and mobility",
+    "prereqs": [
+      "4EC1.1.2.1.a",
+      "4EC1.1.1.3.d"
+    ],
+    "probes": [
+      {
+        "q": "Why may a higher pension-access age increase the labour available to firms?",
+        "answer": "Some people may work longer before receiving a pension, increasing those willing and able to work, subject to health and other constraints."
+      },
+      {
+        "q": "Why might more graduates fail to increase the supply of teachers?",
+        "answer": "They may prefer other jobs or leave teaching because of pay or working conditions, despite having relevant qualifications."
+      },
+      {
+        "q": "An employed artist trains to become a teacher. Must the economy’s total workforce increase?",
+        "answer": "No. The supply to teaching may increase while labour moves out of another occupation; total participation need not rise."
+      }
+    ],
+    "misconceptions": [
+      "Treats a rise in labour supply as a rise in labour demand.",
+      "Assumes everyone in the population is willing and qualified to fill any vacancy.",
+      "Confuses movement between occupations with an automatic increase in the total workforce."
+    ]
+  },
+  "4EC1.1.1.5.a": {
+    "name": "The mixed economy",
+    "prereqs": [
+      "4EC1.1.1.5.b"
+    ],
+    "probes": [
+      {
+        "q": "What is a mixed economy?",
+        "answer": "An economy in which both the public sector and private sector take part in providing goods and services and allocating resources."
+      },
+      {
+        "q": "Does a mixed economy require exactly half of output to come from each sector?",
+        "answer": "No. Both sectors have roles, but their relative sizes can differ substantially."
+      }
+    ],
+    "misconceptions": [
+      "Defines a mixed economy as entirely privately owned.",
+      "Assumes a mixed economy requires a 50–50 split."
+    ]
+  },
+  "4EC1.1.1.5.h": {
+    "name": "Roles of government and private producers",
+    "prereqs": [
+      "4EC1.1.1.5.b"
+    ],
+    "probes": [
+      {
+        "q": "Why might a government fund parks even if a private operator would find them unprofitable?",
+        "answer": "It may value access, health benefits and wider benefits to society that cannot all be recovered through entrance charges."
+      },
+      {
+        "q": "Can government finance a service that is delivered by private businesses?",
+        "answer": "Yes. Financing and provision can be organised separately, such as paying privately owned pharmacies to deliver a funded service."
+      },
+      {
+        "q": "What does government mean as an economic agent?",
+        "answer": "The institutions or group with authority to govern a country or state, including decisions about public spending, taxation and regulation."
+      }
+    ],
+    "misconceptions": [
+      "Assumes public finance requires public ownership of every provider.",
+      "Assumes public provision is automatically efficient."
+    ]
+  },
+  "4EC1.1.1.5.j": {
+    "name": "Privatisation",
+    "prereqs": [
+      "4EC1.1.1.5.b"
+    ],
+    "probes": [
+      {
+        "q": "What is privatisation?",
+        "answer": "The transfer of ownership or control of a government-owned business or assets to the private sector."
+      },
+      {
+        "q": "How does privatisation differ from nationalisation?",
+        "answer": "Privatisation transfers towards private ownership, while nationalisation transfers towards government ownership."
+      }
+    ],
+    "misconceptions": [
+      "Reverses privatisation and nationalisation.",
+      "Calls any government payment to a private contractor privatisation of that contractor."
+    ]
+  },
+  "4EC1.1.1.6.b": {
+    "name": "Examples and mechanisms of external costs",
+    "prereqs": [
+      "4EC1.1.1.6.a"
+    ],
+    "probes": [
+      {
+        "q": "How can smoke from a brick factory impose an external cost?",
+        "answer": "Nearby residents may suffer worse health or cleaning costs without choosing the pollution or receiving compensation from the producer."
+      },
+      {
+        "q": "How can congestion affect third parties?",
+        "answer": "It can delay other road users and expose nearby people to extra noise or emissions, imposing costs beyond those considered by the individual driver."
+      }
+    ],
+    "misconceptions": [
+      "Names pollution without identifying who is harmed and how.",
+      "Treats the producer’s own input costs as third-party harm."
+    ]
+  },
+  "4EC1.1.1.6.d": {
+    "name": "Education, healthcare and vaccination spillovers",
+    "prereqs": [
+      "4EC1.1.1.6.c"
+    ],
+    "probes": [
+      {
+        "q": "How can vaccination benefit someone who has not received it?",
+        "answer": "Lower transmission from vaccinated people can reduce the unvaccinated person’s risk of infection."
+      },
+      {
+        "q": "Give a possible external benefit of education.",
+        "answer": "Other people may benefit when education supports socially useful skills, shared knowledge or more effective civic participation. The learner’s own higher earnings are a private benefit."
+      },
+      {
+        "q": "If earlier economic growth funds later healthcare spending, does that establish that the later spending caused the earlier growth?",
+        "answer": "No. Healthcare can support future health and production, but the stated timing does not establish that reverse causal claim."
+      }
+    ],
+    "misconceptions": [
+      "Identifies only the direct recipient’s benefit.",
+      "Infers causation in the wrong time direction from an association between spending and growth."
+    ]
+  },
+  "4EC1.1.1.6.e": {
+    "name": "Private, external and social costs and benefits",
+    "prereqs": [
+      "4EC1.1.1.6.a",
+      "4EC1.1.1.6.c"
+    ],
+    "probes": [
+      {
+        "q": "Private production costs are $100 and external costs are $30. Calculate social costs.",
+        "answer": "Social costs = private costs + external costs = $100 + $30 = $130."
+      },
+      {
+        "q": "Private benefits are $80 and external benefits are $20. Calculate social benefits.",
+        "answer": "Social benefits = private benefits + external benefits = $80 + $20 = $100."
+      }
+    ],
+    "misconceptions": [
+      "Adds private benefits to external costs as a social-benefit formula.",
+      "Leaves third-party effects out of the social total.",
+      "Subtracts external costs from private costs when calculating social costs."
+    ]
+  },
+  "4EC1.1.1.2.b": {
+    "name": "Why consumers may not maximise their benefit",
+    "prereqs": [
+      "4EC1.1.1.2.a"
+    ],
+    "probes": [
+      {
+        "q": "Why might someone continue buying sugary drinks despite knowing about health risks?",
+        "answer": "Habit, difficulty weighing present enjoyment against future harm, or influence from other people may affect the choice."
+      },
+      {
+        "q": "How can missing information prevent a tourist from choosing the best-value service?",
+        "answer": "The tourist may not know a cheaper comparable service exists and therefore cannot make a fully informed comparison."
+      }
+    ],
+    "misconceptions": [
+      "Assumes knowledge of a risk must immediately stop consumption.",
+      "Treats copying friends as evidence that the consumer has calculated maximum benefit.",
+      "Assumes a high price alone proves the consumer made a poorly informed choice."
+    ]
+  },
+  "4EC1.1.1.2.c": {
+    "name": "Why producers may pursue aims other than current profit",
+    "prereqs": [
+      "4EC1.1.1.2.a",
+      "4EC1.1.2.3.a"
+    ],
+    "probes": [
+      {
+        "q": "Why might a café give free meals to some customers even when each meal costs money to provide?",
+        "answer": "The owner may prioritise customer care or charity. The decision can sacrifice some immediate profit while also potentially building goodwill."
+      },
+      {
+        "q": "A manager wants more sales while the owner wants maximum profit. Why might they disagree about a discount?",
+        "answer": "A discount may increase the quantity sold but reduce the margin per unit. Its effect on profit also depends on the changes in revenue and costs."
+      }
+    ],
+    "misconceptions": [
+      "Assumes every producer always maximises immediate profit.",
+      "Assumes a charitable action must reduce profit overall, regardless of its effects on sales or reputation.",
+      "Treats higher revenue as sufficient proof of higher profit."
+    ]
+  },
+  "4EC1.1.1.5.c": {
+    "name": "Ownership, control and aims in the two sectors",
+    "prereqs": [
+      "4EC1.1.1.5.b",
+      "4EC1.1.1.2.a"
+    ],
+    "probes": [
+      {
+        "q": "Why may a government-run hospital and a privately owned firm have different priorities?",
+        "answer": "The government provider may prioritise access and social objectives, while private owners may place greater weight on profit. Actual aims can vary within both sectors."
+      },
+      {
+        "q": "Must a private firm always maximise profit rather than care about customers?",
+        "answer": "No. Ownership influences incentives, but firms may also pursue customer care, charity, growth or other aims."
+      }
+    ],
+    "misconceptions": [
+      "Treats sector ownership as a guarantee of efficiency or motivation.",
+      "Assumes every public organisation has identical aims."
+    ]
+  },
+  "4EC1.1.2.1.c": {
+    "name": "Changing sector shares in employment and output",
+    "prereqs": [
+      "4EC1.1.2.1.b"
+    ],
+    "probes": [
+      {
+        "q": "How can automation reduce a sector’s employment share without reducing its output?",
+        "answer": "Machines can raise output per worker, allowing the sector to maintain or increase production with fewer workers."
+      },
+      {
+        "q": "Why may service employment grow as an economy develops?",
+        "answer": "Higher incomes can increase demand for services, and workers may move into them as production patterns, skills and relative costs change. This is a possible pattern rather than a rule for every economy."
+      }
+    ],
+    "misconceptions": [
+      "Assumes a smaller employment share proves output must have fallen.",
+      "Treats development as a guarantee that every industry follows the same sequence."
+    ]
+  },
+  "4EC1.1.2.5.a": {
+    "name": "Demand for labour, derived demand and substitutes",
+    "prereqs": [
+      "4EC1.1.2.1.a",
+      "4EC1.1.1.3.a",
+      "4EC1.1.2.2.a"
+    ],
+    "probes": [
+      {
+        "q": "Why may stronger demand for wooden furniture increase demand for woodcutters?",
+        "answer": "Producing more furniture requires more timber, so firms may need more labour cutting wood. Demand for labour is derived from demand for the output."
+      },
+      {
+        "q": "Must installing machinery reduce employment throughout the whole economy?",
+        "answer": "No. It can replace some tasks while creating demand for workers making, maintaining or complementing the machines. Output growth can also affect total employment."
+      },
+      {
+        "q": "At a fixed output level, how can higher output per worker affect the number of workers needed?",
+        "answer": "Fewer workers may be needed for that output. If lower costs subsequently increase output, the overall employment effect can differ."
+      }
+    ],
+    "misconceptions": [
+      "Confuses employers’ demand for workers with workers’ willingness to work.",
+      "Assumes final-product demand is the only labour-demand determinant.",
+      "Assumes higher productivity must always increase or always reduce employment."
+    ]
+  },
+  "4EC1.1.2.2.d": {
+    "name": "Benefits and costs of division of labour",
+    "prereqs": [
+      "4EC1.1.2.2.c",
+      "4EC1.1.2.2.a"
+    ],
+    "probes": [
+      {
+        "q": "How can specialising in one packaging task raise output per worker?",
+        "answer": "Repeated practice can improve skill and reduce time spent switching tasks or tools, allowing more output in the same time."
+      },
+      {
+        "q": "Why might division of labour create a bottleneck?",
+        "answer": "Stages depend on one another. A delay, breakdown or absence at one specialised stage can hold up the rest of production."
+      },
+      {
+        "q": "How could repetitive tasks reduce a possible productivity gain?",
+        "answer": "Boredom may lower motivation or concentration, increasing mistakes, absences or labour turnover."
+      }
+    ],
+    "misconceptions": [
+      "Assumes specialisation always raises productivity.",
+      "Lists boredom without linking it to the worker or production outcome.",
+      "Assumes all stages can continue normally when a dependent stage stops."
+    ]
+  },
+  "4EC1.1.2.3.c": {
+    "name": "Diseconomies of scale and average-cost increases",
+    "prereqs": [
+      "4EC1.1.2.3.a",
+      "4EC1.1.2.3.b"
+    ],
+    "probes": [
+      {
+        "q": "How can communication problems in an expanding firm raise average cost?",
+        "answer": "More complex reporting and coordination can create delays and errors, using more resources for each unit of output."
+      },
+      {
+        "q": "A larger firm’s total costs rise but its average costs fall. Is that evidence of diseconomies of scale?",
+        "answer": "No. Diseconomies of scale concern rising average cost caused by expansion."
+      },
+      {
+        "q": "What does the minimum point on a long-run average-cost curve represent?",
+        "answer": "The lowest attainable long-run average cost on that curve, rather than the lowest total spending."
+      }
+    ],
+    "misconceptions": [
+      "Treats every increase in total costs as a diseconomy of scale.",
+      "Names bureaucracy without linking it to growth and cost per unit.",
+      "Assumes a large user count reveals exactly where the firm lies on its average-cost curve."
+    ]
+  },
+  "4EC1.1.2.4.b": {
+    "name": "Advantages and disadvantages of large and small firms",
+    "prereqs": [
+      "4EC1.1.2.3.a",
+      "4EC1.1.2.3.b"
+    ],
+    "probes": [
+      {
+        "q": "Give one possible advantage of a small firm over a large firm.",
+        "answer": "A small firm may offer a personalised service, respond quickly or serve a niche with close customer relationships."
+      },
+      {
+        "q": "Why can a large firm have lower unit costs but also face management difficulties?",
+        "answer": "Scale may allow purchasing or technical savings, while a more complex organisation can create communication and control problems."
+      }
+    ],
+    "misconceptions": [
+      "Assumes all small firms are inefficient or unsuccessful.",
+      "Assumes being large guarantees higher profit."
+    ]
+  },
+  "4EC1.1.2.4.d": {
+    "name": "Reasons firms remain small",
+    "prereqs": [
+      "4EC1.1.2.4.c"
+    ],
+    "probes": [
+      {
+        "q": "Why might an owner deliberately keep a successful business small?",
+        "answer": "A small niche, a desire for control or personal service, limited finance, or the owner’s aims may make expansion unattractive."
+      },
+      {
+        "q": "How can the nature of a specialist handmade product limit expansion?",
+        "answer": "Customers may value individual attention and custom work, so mass production or extra branches could weaken the firm’s distinctive offer."
+      }
+    ],
+    "misconceptions": [
+      "Assumes remaining small means the firm has failed.",
+      "Ignores the owner’s aims when judging a growth decision."
+    ]
+  },
+  "4EC1.1.1.3.c": {
+    "name": "Demand determinants, related goods and shifts",
+    "prereqs": [
+      "4EC1.1.1.3.a",
+      "4EC1.1.1.3.b"
+    ],
+    "probes": [
+      {
+        "q": "Give two changes other than a good’s own price that could increase demand for a normal good.",
+        "answer": "Any two appropriate examples include higher income, more favourable tastes or advertising, more buyers, a higher price for a substitute, or a lower price for a complement."
+      },
+      {
+        "q": "Tea and coffee are substitutes. If tea becomes more expensive and other conditions stay the same, what happens to demand for coffee?",
+        "answer": "Demand for coffee increases as some consumers switch from tea. The coffee demand curve shifts right."
+      },
+      {
+        "q": "Cars and petrol are complements. How could a higher petrol price affect demand for petrol-powered cars?",
+        "answer": "Demand for those cars may fall because using them becomes more expensive, making the combined purchase and use less attractive."
+      }
+    ],
+    "misconceptions": [
+      "Confuses complements with substitutes.",
+      "Shifts the demand curve because the good’s own price changed.",
+      "Assumes higher income increases demand for every good, including an inferior good."
+    ]
+  },
+  "4EC1.1.1.4.a": {
+    "name": "Price elasticity of demand as responsiveness",
+    "prereqs": [
+      "4EC1.1.1.3.a",
+      "4EC1.1.1.3.b"
+    ],
+    "probes": [
+      {
+        "q": "What does price elasticity of demand measure?",
+        "answer": "How responsive quantity demanded is to a change in the good’s own price, measured using percentage changes."
+      },
+      {
+        "q": "Price falls by 5% and quantity demanded rises by 2%. Which change is the response in the PED relationship?",
+        "answer": "The 2% change in quantity demanded is the response; the price change is the cause being compared with it."
+      }
+    ],
+    "misconceptions": [
+      "Defines PED as a change in price alone.",
+      "Uses a change in income to define price elasticity."
+    ]
+  },
+  "4EC1.1.1.4.p": {
+    "name": "The income elasticity of demand formula",
+    "prereqs": [
+      "4EC1.1.1.4.o",
+      "KP_PERCENT_CHANGE"
+    ],
+    "probes": [
+      {
+        "q": "State the formula for income elasticity of demand.",
+        "answer": "YED = percentage change in quantity demanded / percentage change in income."
+      },
+      {
+        "q": "Why does the sign matter in interpreting YED?",
+        "answer": "It shows whether quantity demanded moves in the same direction as income or in the opposite direction, distinguishing normal from inferior goods."
+      }
+    ],
+    "misconceptions": [
+      "Places the income change above the quantity change.",
+      "Discards the negative sign before classifying a good."
+    ]
+  },
+  "4EC1.1.1.3.f": {
+    "name": "Non-price determinants of supply",
+    "prereqs": [
+      "4EC1.1.1.3.d",
+      "4EC1.1.1.3.e"
+    ],
+    "probes": [
+      {
+        "q": "How would higher raw-material costs normally affect supply, other things equal?",
+        "answer": "Supply shifts left because producing a given quantity becomes less profitable at each selling price."
+      },
+      {
+        "q": "A flood destroys restaurant equipment. Explain the initial effect on meal supply.",
+        "answer": "Production capacity falls, so restaurants can offer fewer meals at each price and supply shifts left."
+      },
+      {
+        "q": "How can a production subsidy affect supply?",
+        "answer": "It lowers the effective cost to producers and can increase the quantity they are willing to offer at each price, shifting supply right."
+      }
+    ],
+    "misconceptions": [
+      "Treats a change in the product’s own selling price as a supply-shift determinant.",
+      "Automatically shifts demand when production costs change."
+    ]
+  },
+  "4EC1.1.1.4.h": {
+    "name": "Price elasticity of supply as responsiveness",
+    "prereqs": [
+      "4EC1.1.1.3.d",
+      "4EC1.1.1.3.e"
+    ],
+    "probes": [
+      {
+        "q": "What does price elasticity of supply measure?",
+        "answer": "The responsiveness of quantity supplied to a change in the product’s own price, measured using percentage changes."
+      },
+      {
+        "q": "Does an increase in production after a technology improvement directly measure PES?",
+        "answer": "No. PES compares quantity supplied responding to a price change with other supply conditions held constant. A technology improvement shifts supply."
+      }
+    ],
+    "misconceptions": [
+      "Uses quantity demanded in the definition of PES.",
+      "Treats every change in production as a response to a price change."
+    ]
+  },
+  "4EC1.1.1.3.i": {
+    "name": "Excess demand and excess supply",
+    "prereqs": [
+      "4EC1.1.1.3.a",
+      "4EC1.1.1.3.d",
+      "4EC1.1.1.3.g"
+    ],
+    "probes": [
+      {
+        "q": "At a given price, quantity demanded is 120 and quantity supplied is 90. Calculate the market imbalance.",
+        "answer": "Excess demand is 120 - 90 = 30 units."
+      },
+      {
+        "q": "At a given price, sellers offer 150 units and buyers want 110. Is there excess demand or excess supply?",
+        "answer": "There is excess supply of 150 - 110 = 40 units."
+      }
+    ],
+    "misconceptions": [
+      "Reverses the quantities when identifying a shortage or surplus.",
+      "Calls a shift in supply excess supply without comparing demand and supply at the same price."
+    ]
+  },
+  "4EC1.1.1.5.e": {
+    "name": "Market failure and inefficient resource allocation",
+    "prereqs": [
+      "4EC1.1.1.3.g"
+    ],
+    "probes": [
+      {
+        "q": "What is market failure?",
+        "answer": "A situation in which market allocation does not use resources efficiently from society’s perspective."
+      },
+      {
+        "q": "Why might missing information create market failure when tourists buy a service?",
+        "answer": "Tourists may make purchases they would change if they knew a comparable lower-cost option, so the allocation can fail to reflect informed preferences. A price difference alone does not prove failure."
+      }
+    ],
+    "misconceptions": [
+      "Defines market failure as any firm making a loss.",
+      "Treats every high price as proof of inefficient allocation."
+    ]
+  },
+  "4EC1.1.2.4.a": {
+    "name": "Competition, efficiency and innovation",
+    "prereqs": [
+      "4EC1.1.1.3.g",
+      "4EC1.1.2.3.a"
+    ],
+    "probes": [
+      {
+        "q": "How can competition encourage better quality?",
+        "answer": "Customers can switch to rivals, giving firms an incentive to improve quality or service to attract and retain buyers."
+      },
+      {
+        "q": "What distinguishes an invention from innovation in business?",
+        "answer": "An invention is a new idea or creation. Innovation involves applying a new or improved product or process in practice or commercially."
+      },
+      {
+        "q": "Does stronger competition guarantee both lower prices and higher quality in every case?",
+        "answer": "No. It creates incentives, but effects also depend on costs, differentiation, information and whether firms can remain viable."
+      }
+    ],
+    "misconceptions": [
+      "Assumes competition affects only price.",
+      "Defines innovation as producing more of an unchanged product.",
+      "Treats the existence of several sellers as proof that they compete independently."
+    ]
+  },
+  "4EC1.1.2.5.f": {
+    "name": "Trade unions and collective bargaining",
+    "prereqs": [
+      "4EC1.1.2.5.a",
+      "4EC1.1.2.5.b",
+      "4EC1.1.2.3.a"
+    ],
+    "probes": [
+      {
+        "q": "Whom does a trade union represent?",
+        "answer": "Employees or workers who join it, seeking to protect their interests and negotiate pay and working conditions."
+      },
+      {
+        "q": "Why can collective bargaining strengthen workers’ position?",
+        "answer": "Acting together can give employees more negotiating power than separate individuals, depending on membership, participation and employers’ alternatives."
+      },
+      {
+        "q": "Must a negotiated wage rise reduce employment?",
+        "answer": "No. Employment effects depend on product demand, productivity, margins and employers’ responses. Higher motivation or retention may offset some added costs."
+      }
+    ],
+    "misconceptions": [
+      "Treats a trade union as the organisation representing employers.",
+      "Assumes a wage rise guarantees either unchanged employment or job losses.",
+      "Uses membership numbers alone as proof of bargaining effectiveness."
+    ]
+  },
+  "4EC1.1.2.5.e": {
+    "name": "Labour-market equilibrium and changes in wages",
+    "prereqs": [
+      "4EC1.1.2.5.a",
+      "4EC1.1.2.5.b",
+      "4EC1.1.1.3.g"
+    ],
+    "probes": [
+      {
+        "q": "In the standard competitive model, what determines the equilibrium wage?",
+        "answer": "The wage at which quantity of labour demanded equals quantity supplied in that labour market."
+      },
+      {
+        "q": "Demand for a type of labour rises while supply is unchanged. What happens in the standard model?",
+        "answer": "The equilibrium wage and employment both rise, with other conditions unchanged."
+      }
+    ],
+    "misconceptions": [
+      "Uses demand for the final product as if it were workers’ labour supply.",
+      "Assumes every increase in the wage rate is caused by more people wanting work."
+    ]
+  },
+  "4EC1.1.1.4.b": {
+    "name": "The PED formula",
+    "prereqs": [
+      "4EC1.1.1.4.a",
+      "KP_PERCENT_CHANGE"
+    ],
+    "probes": [
+      {
+        "q": "State the formula for price elasticity of demand.",
+        "answer": "PED = percentage change in quantity demanded / percentage change in price."
+      },
+      {
+        "q": "Why should changes in price and quantity both be expressed as percentages?",
+        "answer": "Percentage changes put quantities measured in different units on a comparable scale, producing a unit-free coefficient."
+      }
+    ],
+    "misconceptions": [
+      "Places percentage change in price in the numerator.",
+      "Divides an absolute quantity change by a percentage price change."
+    ]
+  },
+  "4EC1.1.1.4.q": {
+    "name": "Calculating income elasticity of demand",
+    "prereqs": [
+      "4EC1.1.1.4.p",
+      "KP_PERCENT_CHANGE"
+    ],
+    "probes": [
+      {
+        "q": "Income rises by 10% and quantity demanded rises by 4%. Calculate YED.",
+        "answer": "YED = 4 / 10 = +0.4."
+      },
+      {
+        "q": "Income rises by 8% and quantity demanded falls by 12%. Calculate YED.",
+        "answer": "YED = -12 / 8 = -1.5. The negative value indicates an inferior good."
+      }
+    ],
+    "misconceptions": [
+      "Reverses the percentage-change ratio.",
+      "Adds a percentage sign to the final coefficient.",
+      "Treats a negative result as a calculation error even when demand falls as income rises."
+    ]
+  },
+  "4EC1.1.1.4.r": {
+    "name": "Normal, inferior and luxury goods",
+    "prereqs": [
+      "4EC1.1.1.4.p"
+    ],
+    "probes": [
+      {
+        "q": "Classify goods with YED values of -0.4, +0.6 and +1.5.",
+        "answer": "The first is inferior. The second is normal with an income-inelastic response. The third is a luxury, which is a normal good with YED greater than one."
+      },
+      {
+        "q": "A good has YED -0.4 and income rises by 10%. Predict the percentage change in demand using that estimate.",
+        "answer": "Quantity demanded falls by about 4%, with other conditions unchanged."
+      },
+      {
+        "q": "Can a good be classified as inferior solely because it is cheap or low quality?",
+        "answer": "No. Inferiority is defined by demand falling as income rises, rather than by price or quality alone."
+      }
+    ],
+    "misconceptions": [
+      "Defines inferior goods only as low-quality products.",
+      "Calls every positive YED a luxury.",
+      "Uses the absolute value of a negative YED to classify a good as a luxury."
+    ]
+  },
+  "4EC1.1.1.4.i": {
+    "name": "The PES formula",
+    "prereqs": [
+      "4EC1.1.1.4.h",
+      "KP_PERCENT_CHANGE"
+    ],
+    "probes": [
+      {
+        "q": "State the formula for price elasticity of supply.",
+        "answer": "PES = percentage change in quantity supplied / percentage change in price."
+      },
+      {
+        "q": "Why does PES calculated from percentage changes have no physical unit?",
+        "answer": "The numerator and denominator are percentage changes, so their ratio is a dimensionless coefficient."
+      }
+    ],
+    "misconceptions": [
+      "Places percentage change in price above percentage change in quantity supplied.",
+      "Expresses the final coefficient as a percentage."
+    ]
+  },
+  "4EC1.1.1.5.f": {
+    "name": "Reasons for government intervention",
+    "prereqs": [
+      "4EC1.1.1.5.e"
+    ],
+    "probes": [
+      {
+        "q": "Why might a government intervene when production harms nearby residents?",
+        "answer": "Producers may ignore uncompensated third-party costs, so private output decisions can differ from socially efficient decisions."
+      },
+      {
+        "q": "Does identifying market failure prove that any government policy will improve matters?",
+        "answer": "No. Intervention can have information problems, enforcement costs and unintended effects, so its benefits must be assessed against its costs."
+      }
+    ],
+    "misconceptions": [
+      "Assumes government intervention always improves resource allocation.",
+      "Confuses a reason to intervene with evidence that a particular policy works."
+    ]
+  },
+  "4EC1.1.1.5.k": {
+    "name": "Effects of privatisation on stakeholders",
+    "prereqs": [
+      "4EC1.1.1.5.j",
+      "4EC1.1.2.3.a",
+      "4EC1.1.2.4.a"
+    ],
+    "probes": [
+      {
+        "q": "How might privatisation benefit consumers?",
+        "answer": "Investment and stronger incentives to reduce costs or attract customers may improve service or lower prices. Whether gains reach consumers depends on competition, regulation and owners’ aims."
+      },
+      {
+        "q": "Why might workers lose out after privatisation?",
+        "answer": "New owners may remove posts or change employment conditions to reduce costs, potentially causing redundancies or less secure work."
+      },
+      {
+        "q": "How could a government benefit from selling a public business?",
+        "answer": "Sale proceeds can finance other uses or reduce debt, and the government may avoid future subsidies. It also gives up ownership and possible future income."
+      }
+    ],
+    "misconceptions": [
+      "Assumes private ownership guarantees lower prices or better service.",
+      "Ignores which stakeholder receives a benefit or bears a cost.",
+      "Treats one-off sale proceeds as a recurring annual revenue stream."
+    ]
+  },
+  "4EC1.1.2.4.e": {
+    "name": "The meaning of monopoly",
+    "prereqs": [
+      "4EC1.1.2.4.a"
+    ],
+    "probes": [
+      {
+        "q": "What is the central feature of a monopoly market structure in this course?",
+        "answer": "One firm dominates supply in the relevant market, giving it substantial market power."
+      },
+      {
+        "q": "Must a profitable business be a monopoly?",
+        "answer": "No. Profitability alone does not establish dominance or the absence of effective competitive constraints."
+      }
+    ],
+    "misconceptions": [
+      "Defines monopoly solely by high profit.",
+      "Calls any market with several dominant competing firms a monopoly."
+    ]
+  },
+  "4EC1.1.2.4.h": {
+    "name": "The meaning of oligopoly",
+    "prereqs": [
+      "4EC1.1.2.4.a"
+    ],
+    "probes": [
+      {
+        "q": "What is an oligopoly?",
+        "answer": "A market dominated by a few large firms, whose decisions can affect one another. Smaller firms may also be present."
+      },
+      {
+        "q": "Does the presence of small fringe firms rule out oligopoly?",
+        "answer": "No. A few large firms can still dominate the relevant market while smaller firms compete for a limited share."
+      }
+    ],
+    "misconceptions": [
+      "Thinks oligopoly requires exactly two firms.",
+      "Assumes any small competitor prevents a market being an oligopoly."
+    ]
+  },
+  "4EC1.1.2.6.d": {
+    "name": "Minimum wages and effects on workers and firms",
+    "prereqs": [
+      "4EC1.1.2.5.e",
+      "4EC1.1.2.3.a"
+    ],
+    "probes": [
+      {
+        "q": "What is a minimum wage?",
+        "answer": "The lowest wage employers are legally allowed to pay covered employees under the stated rules."
+      },
+      {
+        "q": "In the standard competitive model, what can happen if a binding minimum wage is set above equilibrium?",
+        "answer": "Quantity of labour supplied exceeds quantity demanded. Some employed workers gain higher pay, while employment or hours may be lower than without that binding floor."
+      },
+      {
+        "q": "A worker earns €5.87 an hour for 175 hours in a month. Calculate gross monthly income.",
+        "answer": "Gross income = €5.87 × 175 = €1,027.25 before deductions."
+      },
+      {
+        "q": "Does a minimum-wage increase directly raise every employee’s pay?",
+        "answer": "No. The direct effect concerns workers whose pay must rise to meet the new floor. Workers already above it may receive no direct increase."
+      },
+      {
+        "q": "Why can a higher nominal minimum wage fail to restore purchasing power?",
+        "answer": "Prices may have risen by more than the wage, so real purchasing power can still be lower. Employment and hours also matter."
+      }
+    ],
+    "misconceptions": [
+      "Assumes every worker receives the same pay increase.",
+      "Assumes a higher wage floor must increase employment.",
+      "Confuses a higher nominal wage with a guaranteed higher real income.",
+      "Treats a one-time increase in the monthly wage level as a repeated percentage increase every month."
+    ]
+  },
+  "4EC1.1.1.4.c": {
+    "name": "Calculating PED and rearranging the formula",
+    "prereqs": [
+      "4EC1.1.1.4.b",
+      "KP_PERCENT_CHANGE"
+    ],
+    "probes": [
+      {
+        "q": "Price rises by 10% and quantity demanded falls by 5%. Calculate PED.",
+        "answer": "PED = -5 / 10 = -0.5. The coefficient has no percentage or currency unit."
+      },
+      {
+        "q": "PED is -1.5 and price falls by 4%. What is the predicted percentage change in quantity demanded?",
+        "answer": "Percentage change in quantity demanded = -1.5 × -4% = +6%, an increase."
+      },
+      {
+        "q": "A price falls from $10 to $9 and quantity demanded rises from 100 to 120. Calculate PED using original-value percentage changes.",
+        "answer": "Price change = -10%; quantity change = +20%. PED = 20 / -10 = -2."
+      }
+    ],
+    "misconceptions": [
+      "Reverses the percentage-change ratio.",
+      "Drops the negative sign on a stated decrease.",
+      "Adds a percentage sign to the final elasticity coefficient.",
+      "Divides by elasticity when the required rearrangement calls for multiplication."
+    ]
+  },
+  "4EC1.1.1.4.e": {
+    "name": "Interpreting PED values",
+    "prereqs": [
+      "4EC1.1.1.4.b"
+    ],
+    "probes": [
+      {
+        "q": "Classify PED values of -0.5, -1 and -2.",
+        "answer": "-0.5 is price inelastic, -1 is unitary price elastic, and -2 is price elastic. Compare the absolute magnitude with one."
+      },
+      {
+        "q": "How does perfectly inelastic demand differ from inelastic demand such as PED = -0.4?",
+        "answer": "With PED = 0, quantity does not respond to price. With PED = -0.4, quantity responds, but by a smaller percentage than price."
+      },
+      {
+        "q": "What does a perfectly price-elastic demand curve represent?",
+        "answer": "At the specified market price buyers can take the offered quantity, but a price increase above it eliminates demand in the idealised model. The demand curve is horizontal and PED has infinite magnitude."
+      }
+    ],
+    "misconceptions": [
+      "Uses the negative sign to decide whether demand is elastic.",
+      "Thinks inelastic demand means quantity never changes.",
+      "Confuses unitary elasticity with a coefficient of zero."
+    ]
+  },
+  "4EC1.1.1.4.j": {
+    "name": "Calculating PES and rearranging the formula",
+    "prereqs": [
+      "4EC1.1.1.4.i",
+      "KP_PERCENT_CHANGE"
+    ],
+    "probes": [
+      {
+        "q": "Price rises by 8% and quantity supplied rises by 4%. Calculate PES.",
+        "answer": "PES = 4 / 8 = 0.5."
+      },
+      {
+        "q": "PES is 1.5 and price increases by 12%. Calculate the percentage change in quantity supplied.",
+        "answer": "Percentage change in quantity supplied = 1.5 × 12% = 18%, an increase."
+      },
+      {
+        "q": "Price falls by 10% and quantity supplied falls by 6%. Calculate PES.",
+        "answer": "PES = -6 / -10 = +0.6. Both stated changes are negative, so the coefficient is positive."
+      }
+    ],
+    "misconceptions": [
+      "Uses the demand response instead of the supply response.",
+      "Loses one negative sign when both price and quantity supplied fall.",
+      "Reports the percentage quantity change as a unit-free elasticity coefficient."
+    ]
+  },
+  "4EC1.1.1.4.l": {
+    "name": "Interpreting PES values",
+    "prereqs": [
+      "4EC1.1.1.4.i"
+    ],
+    "probes": [
+      {
+        "q": "Classify PES values of 0, 0.5, 1 and 2.",
+        "answer": "They indicate perfectly inelastic, inelastic, unitary elastic and elastic supply respectively."
+      },
+      {
+        "q": "Quantity supplied rises by a smaller percentage than price. What does this imply about PES?",
+        "answer": "PES is between zero and one, so supply is price inelastic."
+      }
+    ],
+    "misconceptions": [
+      "Assumes all positive PES values indicate elastic supply.",
+      "Treats inelastic supply as quantity that can never change."
+    ]
+  },
+  "4EC1.1.2.6.a": {
+    "name": "Policies addressing external costs and benefits",
+    "prereqs": [
+      "4EC1.1.1.5.f",
+      "4EC1.1.1.6.a",
+      "4EC1.1.1.6.c"
+    ],
+    "probes": [
+      {
+        "q": "How can a fine discourage driving through red traffic lights?",
+        "answer": "The expected penalty raises the cost of that behaviour and may reduce violations and the harm imposed on other road users."
+      },
+      {
+        "q": "Why might a government subsidise rail travel to reduce road congestion?",
+        "answer": "Lower rail fares or improved services can encourage switching from cars, potentially reducing congestion and related external costs."
+      },
+      {
+        "q": "Distinguish a pollution permit from a ban on a polluting activity.",
+        "answer": "A permit authorises a specified amount of pollution under stated rules, while a ban prohibits the covered activity. Tradable permits can create incentives to reduce emissions."
+      }
+    ],
+    "misconceptions": [
+      "Assumes announcing a policy guarantees compliance.",
+      "Discusses government revenue without linking changed behaviour to the external effect.",
+      "Treats a subsidy to a cleaner alternative as necessarily a subsidy to the harmful activity."
+    ]
+  },
+  "4EC1.1.2.4.f": {
+    "name": "Monopoly features, price-making and barriers to entry",
+    "prereqs": [
+      "4EC1.1.2.4.e"
+    ],
+    "probes": [
+      {
+        "q": "How can a patent create a barrier to entry?",
+        "answer": "It gives legal protection for the invention, preventing unauthorised competitors from producing the protected design during its term."
+      },
+      {
+        "q": "What does being a price-maker mean, and does it permit any price without consequences?",
+        "answer": "The firm has influence over its selling price, but buyers’ willingness to pay and alternatives still constrain sales."
+      },
+      {
+        "q": "Why can high start-up costs deter new competitors?",
+        "answer": "Entrants may be unable to raise the funds needed to establish viable production before earning revenue."
+      },
+      {
+        "q": "What is meant by a unique product in the monopoly context?",
+        "answer": "A product without an identical or close substitutable alternative in the relevant market under the course’s definition."
+      }
+    ],
+    "misconceptions": [
+      "Treats price-making power as freedom to charge any price without losing customers.",
+      "Describes a barrier as something that makes entry easier.",
+      "Defines a patent as permission for all competitors to copy the product."
+    ]
+  },
+  "4EC1.1.2.4.i": {
+    "name": "Oligopoly features and forms of competition",
+    "prereqs": [
+      "4EC1.1.2.4.h"
+    ],
+    "probes": [
+      {
+        "q": "Give two ways oligopolists can compete without changing price.",
+        "answer": "Examples include product quality, branding, customer service, loyalty schemes or innovation."
+      },
+      {
+        "q": "Does oligopoly automatically mean firms collude?",
+        "answer": "No. They may compete strongly, coordinate, or display different behaviour in different circumstances. Collusion needs evidence."
+      },
+      {
+        "q": "How can large marketing budgets discourage entry?",
+        "answer": "A new firm may struggle to match established brand recognition or afford the expenditure needed to attract customers."
+      }
+    ],
+    "misconceptions": [
+      "Assumes all oligopolists sell identical products.",
+      "Assumes all oligopolies must collude.",
+      "Ignores non-price competition when identifying market behaviour."
+    ]
+  },
+  "4EC1.1.1.4.f": {
+    "name": "Determinants of PED",
+    "prereqs": [
+      "4EC1.1.1.4.a",
+      "4EC1.1.1.4.e"
+    ],
+    "probes": [
+      {
+        "q": "Why might demand for an individual brand of chocolate be price elastic?",
+        "answer": "Other brands can be close substitutes, so buyers can switch when its price rises."
+      },
+      {
+        "q": "Why may demand become more price elastic over time after a price rise?",
+        "answer": "Consumers have more time to change habits, find substitutes or adjust how they use the product."
+      },
+      {
+        "q": "Why might a necessity taking a small share of income have relatively price-inelastic demand?",
+        "answer": "Consumers may continue buying because it is important and a modest price rise has little effect on their budget, so quantity responds relatively little."
+      }
+    ],
+    "misconceptions": [
+      "Assumes an expensive good must always have elastic demand.",
+      "Lists substitutes or time without linking them to quantity responsiveness.",
+      "Calls a distinctive leisure experience a necessity solely because some consumers value it."
+    ]
+  },
+  "4EC1.1.1.4.g": {
+    "name": "PED, price changes and total revenue",
+    "prereqs": [
+      "4EC1.1.1.4.e",
+      "4EC1.1.2.3.a"
+    ],
+    "probes": [
+      {
+        "q": "Demand remains price inelastic over a small price increase. What happens to total revenue, other things equal?",
+        "answer": "Total revenue rises because the price increase outweighs the proportionate reduction in quantity sold over that range."
+      },
+      {
+        "q": "A firm raises price from $10 to $11 and sales fall from 100 to 96 units. Calculate the revenue change.",
+        "answer": "Revenue rises from $1,000 to $1,056, an increase of $56."
+      },
+      {
+        "q": "If total revenue rises, must profit also rise?",
+        "answer": "No. Profit also depends on total costs, which may have increased by more than revenue."
+      }
+    ],
+    "misconceptions": [
+      "Assumes lowering price always increases total revenue.",
+      "Confuses revenue with profit.",
+      "Infers PED from a high selling price without evidence about quantity responsiveness."
+    ]
+  },
+  "4EC1.1.1.4.m": {
+    "name": "Determinants of PES",
+    "prereqs": [
+      "4EC1.1.1.4.h",
+      "4EC1.1.1.4.l"
+    ],
+    "probes": [
+      {
+        "q": "Why can spare factory capacity make supply more price elastic?",
+        "answer": "A firm can increase output using existing facilities when price rises, rather than waiting for new capacity to be built."
+      },
+      {
+        "q": "Why are freshly grown strawberries often relatively price inelastic in supply in the short run?",
+        "answer": "Growing takes time, output depends on natural conditions and fresh fruit cannot be stored indefinitely, limiting a rapid quantity response."
+      },
+      {
+        "q": "Does having many farms by itself prove that agricultural supply is elastic?",
+        "answer": "No. Responsiveness depends on stocks, spare capacity, resource availability and production time, rather than the producer count alone."
+      }
+    ],
+    "misconceptions": [
+      "Assumes producers can instantly expand output after a price rise.",
+      "Treats the number of firms as sufficient evidence of high PES.",
+      "Ignores the difference between short-run and long-run adjustment."
+    ]
+  },
+  "4EC1.1.2.6.b": {
+    "name": "Assessing externality policies and their costs",
+    "prereqs": [
+      "4EC1.1.2.6.a",
+      "4EC1.1.1.1.b",
+      "4EC1.1.1.4.e"
+    ],
+    "probes": [
+      {
+        "q": "Why might a tax have little effect on the quantity of a harmful product bought?",
+        "answer": "Demand may be price inelastic, the tax may be small or weakly passed through, or consumers may have few practical alternatives."
+      },
+      {
+        "q": "What opportunity cost can arise when government funds a subsidy?",
+        "answer": "The funds could have supported the next best alternative use, such as another service or project."
+      },
+      {
+        "q": "A fine is smaller than the profit from an illegal activity. Must it stop the activity?",
+        "answer": "No. Deterrence also depends on the chance of detection and enforcement; the expected penalty may be too small relative to the gain."
+      }
+    ],
+    "misconceptions": [
+      "Assumes every tax or fine completely removes the externality.",
+      "Ignores monitoring, administration and opportunity costs.",
+      "Treats money raised by the policy as proof that social welfare improved."
+    ]
+  },
+  "4EC1.1.2.4.g": {
+    "name": "Benefits and costs of monopoly",
+    "prereqs": [
+      "4EC1.1.2.4.f",
+      "4EC1.1.2.3.b"
+    ],
+    "probes": [
+      {
+        "q": "How might monopoly power harm consumers?",
+        "answer": "Weak competitive pressure may permit higher prices, restricted choice or weaker incentives to control costs and improve service."
+      },
+      {
+        "q": "How could a monopoly benefit consumers?",
+        "answer": "Economies of scale or finance for innovation can support lower unit costs or better products, if those gains are passed to consumers."
+      },
+      {
+        "q": "Does a monopoly’s cost saving guarantee a price reduction?",
+        "answer": "No. Passing on savings depends on its aims, demand conditions and competitive or regulatory constraints."
+      }
+    ],
+    "misconceptions": [
+      "Assumes every monopoly is necessarily harmful in every respect.",
+      "Assumes efficiency savings must be passed to consumers."
+    ]
+  },
+  "4EC1.1.2.4.j": {
+    "name": "Consumer effects of oligopoly and collusion",
+    "prereqs": [
+      "4EC1.1.2.4.i",
+      "4EC1.1.2.3.b"
+    ],
+    "probes": [
+      {
+        "q": "How can price fixing among competing sellers harm buyers?",
+        "answer": "It reduces independent price competition and can keep prices above the level stronger rivalry would produce."
+      },
+      {
+        "q": "How might airline passengers benefit from oligopolistic competition?",
+        "answer": "Airlines may compete through lower fares, new routes, better service or innovation to attract passengers."
+      },
+      {
+        "q": "Do many online listings guarantee effective price competition?",
+        "answer": "No. If the sellers coordinate their decisions, the apparent range of offers may provide little independent price rivalry."
+      }
+    ],
+    "misconceptions": [
+      "Treats collusion as a benefit to buyers because it raises firms’ profits.",
+      "Assumes all consumer effects of oligopoly are negative.",
+      "Equates the number of listings with the number of independent competitors."
+    ]
+  },
+  "4EC1.1.2.6.c": {
+    "name": "Government regulation of competition and takeovers",
+    "prereqs": [
+      "4EC1.1.2.4.a",
+      "4EC1.1.2.4.f",
+      "4EC1.1.2.4.i",
+      "4EC1.1.2.4.c"
+    ],
+    "probes": [
+      {
+        "q": "Why might a competition regulator examine a takeover between major rivals?",
+        "answer": "It may reduce competitive pressure and increase market power, potentially harming consumers through price, choice, quality or innovation."
+      },
+      {
+        "q": "Does a high acquisition price alone prove that a takeover harms consumers?",
+        "answer": "No. The regulator needs evidence about market structure, competitive constraints, efficiencies and likely conduct."
+      },
+      {
+        "q": "Why might easier entry benefit taxi passengers?",
+        "answer": "More competing suppliers can improve availability, choice or price, depending on service standards and market conditions."
+      }
+    ],
+    "misconceptions": [
+      "Assumes every merger should be blocked.",
+      "Treats the acquisition price as sufficient evidence of consumer harm.",
+      "Considers only price and ignores quality, choice or innovation."
+    ]
+  },
+  "4EC1.1.1.4.s": {
+    "name": "Using PED and YED in business and government decisions",
+    "prereqs": [
+      "4EC1.1.1.4.e",
+      "4EC1.1.1.4.g",
+      "4EC1.1.1.4.r"
+    ],
+    "probes": [
+      {
+        "q": "A bus service has YED -1.2. Why might an income forecast help its planning?",
+        "answer": "If incomes rise, estimated demand may fall. The operator can use that forecast to plan capacity, staffing and marketing, while allowing for other demand influences."
+      },
+      {
+        "q": "Can PED alone determine how much revenue a higher VAT rate will raise?",
+        "answer": "No. Receipts also depend on the tax rate, taxable sales base, exemptions and how much of the tax is passed into prices. PED helps estimate quantity responses."
+      },
+      {
+        "q": "Why should a streaming service avoid assuming that it is a luxury for every customer?",
+        "answer": "Its income response needs evidence and can differ between customers and markets. Content, competing services and relative prices also influence subscriptions."
+      }
+    ],
+    "misconceptions": [
+      "Treats an elasticity estimate as a guaranteed forecast.",
+      "Infers tax receipts directly from the direction of sellers’ total revenue.",
+      "Assumes a product must have the same elasticity in every market and time period."
+    ]
+  }
+}

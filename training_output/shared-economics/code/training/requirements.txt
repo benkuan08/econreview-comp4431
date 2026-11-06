@@ -1,0 +1,10 @@
+# Linux / Python 3.11. Install CUDA-enabled PyTorch separately as shown in README.
+# A reproducible starting stack, not a claim that a GPU run was completed locally.
+# Tokenizer, Qwen architecture, Trainer and generation APIs.
+transformers==5.3.0
+# Add/load LoRA adapters while keeping the original 9B weights frozen.
+peft==0.18.1
+# Device and mixed-precision support used internally by Trainer.
+accelerate==1.12.0
+# Store/load model and adapter tensors in the safetensors format.
+safetensors>=0.5.3,<1

@@ -1,0 +1,72 @@
+{
+  "status": "complete",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "base_revision": "68c46c4b3498877f3ef123c856ecfde50c39f404",
+  "precision": "BF16 base with LoRA adapters",
+  "epochs": 2,
+  "optimizer_updates": 26,
+  "trainable_parameters": 43278336,
+  "micro_batch": 4,
+  "gradient_accumulation": 4,
+  "effective_batch": 16,
+  "best_validation_loss": 0.7582377195358276,
+  "best_checkpoint": "runs/shared-economics/checkpoint-26",
+  "validation_history": [
+    {
+      "epoch": 1.0,
+      "eval_loss": 0.9689027070999146,
+      "eval_runtime": 3.2286,
+      "eval_samples_per_second": 8.982,
+      "eval_steps_per_second": 8.982,
+      "step": 13
+    },
+    {
+      "epoch": 2.0,
+      "eval_loss": 0.7582377195358276,
+      "eval_runtime": 3.2287,
+      "eval_samples_per_second": 8.982,
+      "eval_steps_per_second": 8.982,
+      "step": 26
+    }
+  ],
+  "training_metrics": [],
+  "memory": {
+    "peak_allocated_GiB": 34.692652225494385,
+    "peak_reserved_GiB": 37.541015625
+  },
+  "smoke_test": {
+    "passed": true,
+    "steps": 2,
+    "micro_batch": 4,
+    "training_losses": [
+      1.634186863899231,
+      1.6063849925994873
+    ],
+    "validation_loss": 1.664011836051941,
+    "max_train_tokens": 1359,
+    "max_validation_tokens": 1300,
+    "peak_allocated_GiB": 34.20076370239258,
+    "peak_reserved_GiB": 37.4765625,
+    "elapsed_seconds": 28.7,
+    "adapter_weights_updated": true,
+    "full_run_starts_from_original_adapter": true
+  },
+  "source_data_sha256": "6fb914247db4c0f9675203a9c3f32bc098bd1409036e669094b5de10d246aa6e",
+  "graph_sha256": "42b78c5bb175326954e86951dfd90139b5340b3c40b823142422647247aeecff",
+  "actual_grading_accuracy_evaluated": false,
+  "adapter_weights_sha256": "0ce0d8be2d3a483dc44ffbb65107a7690db7b79989b0d56397866f648f8c142a",
+  "single_sample_reload_check": {
+    "task": "rubric",
+    "split": "validation",
+    "count": 1,
+    "model": "models/Qwen3.5-9B-Base",
+    "revision_requested": "main",
+    "model_commit": null,
+    "adapter": "runs/shared-economics/adapter",
+    "normal_stop_rate": 1.0,
+    "json_valid_rate": 1.0,
+    "schema_valid_rate": 1.0,
+    "known_kp_ids_rate": 0.0,
+    "limitation": "Format and ID checks do not measure grading accuracy. Expert review is required."
+  }
+}

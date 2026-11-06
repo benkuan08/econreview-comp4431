@@ -1,0 +1,53 @@
+{
+  "repo": "benjaik/igcse-economics-qwen3.5-9b-lora-20261105",
+  "commit": "6b65de35a9efe4c003839753eac1dd09356940ae",
+  "private": false,
+  "files": [
+    {
+      "name": "README.md",
+      "size": 933,
+      "sha256": "73c69e177479fc9bf96d931a230172280f94bac94a0a4fe436744906862e67ce"
+    },
+    {
+      "name": "adapter_config.json",
+      "size": 1175,
+      "sha256": "1639305bf1d697fe9005a3916d205045a75a6a65af1934df047a554d5fc9afb0"
+    },
+    {
+      "name": "adapter_model.safetensors",
+      "size": 173188512,
+      "sha256": "0ce0d8be2d3a483dc44ffbb65107a7690db7b79989b0d56397866f648f8c142a"
+    },
+    {
+      "name": "chat_template.jinja",
+      "size": 7756,
+      "sha256": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715"
+    },
+    {
+      "name": "source_model.json",
+      "size": 87,
+      "sha256": "53766d23b009f8bb2f2488839f07af985d6afd899622ca26af7c8bf963bd0811"
+    },
+    {
+      "name": "tokenizer.json",
+      "size": 19989343,
+      "sha256": "87a7830d63fcf43bf241c3c5242e96e62dd3fdc29224ca26fed8ea333db72de4"
+    },
+    {
+      "name": "tokenizer_config.json",
+      "size": 1101,
+      "sha256": "4e5fdef23437b31196353a689e05ed86e63f668682a1c9fed628d7630cba0982"
+    },
+    {
+      "name": "training_args.bin",
+      "size": 5265,
+      "sha256": "49ad11b69a90184b5daac2d45b837fd51602905f0d4334fee428d4d098b63d53"
+    },
+    {
+      "name": "training_records.tar.gz",
+      "size": 45566,
+      "sha256": "6658c8152caa47ac0dbaea80c0d611ab77b335a611bc5718c5079b0c0c719dbf"
+    }
+  ],
+  "adapter_sha256": "0ce0d8be2d3a483dc44ffbb65107a7690db7b79989b0d56397866f648f8c142a"
+}
