@@ -1,6 +1,6 @@
 {
   "project": "econreview-comp4431",
-  "created_at_utc": "2026-11-12T06:02:31.701380+00:00",
+  "created_at_utc": "2026-11-12T06:36:16.628855+00:00",
   "files": [
     {
       "path": ".gitignore",
@@ -54,8 +54,8 @@
     },
     {
       "path": "backend/README.md",
-      "bytes": 15775,
-      "sha256": "121bd2c50e7603bb6ec50f406bed4c953ea62d7fb81b58f393b7138bbbd78637"
+      "bytes": 16069,
+      "sha256": "710464035166c939f5c40c47ac9c2fc58f53dd2d70dccda40b88c48b6d21b58b"
     },
     {
       "path": "backend/requirements.lock.txt",
@@ -158,9 +158,19 @@
       "sha256": "42b78c5bb175326954e86951dfd90139b5340b3c40b823142422647247aeecff"
     },
     {
+      "path": "notebooks/colab_preview.js",
+      "bytes": 2337,
+      "sha256": "4512f21995dc1307bd36495ff9e0c95b51c23a2f7ed8077910a400424feecabf"
+    },
+    {
+      "path": "notebooks/colab_preview.py",
+      "bytes": 4062,
+      "sha256": "8063f8c99e46ede8d98a707b5e4ac165050356ed9248324b5cc1675b222b3159"
+    },
+    {
       "path": "notebooks/econreview-colab.ipynb",
-      "bytes": 14089,
-      "sha256": "29c41639f9e1861ffac2f80d35f9d73736fb31c6a2c95a414fa0edc37458d82a"
+      "bytes": 15656,
+      "sha256": "4d6af5646a02a2ebd02211b0809b354802d460a87e4aca1b0d2cbcfac12e5294"
     },
     {
       "path": "Prompts/diagnoser.txt",
@@ -199,8 +209,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 6489,
-      "sha256": "54dfe5f815b4fcccea886e495fe1ea356bf32ff13730ae9d6838f3dd3b73fc6b"
+      "bytes": 6491,
+      "sha256": "5ed53727427a175248c79ce2f90251aa46344218c4627ef51f1a6fe849da3dad"
     },
     {
       "path": "scripts/download_adapter.py",

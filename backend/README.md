@@ -81,9 +81,11 @@ Run each command in its own PowerShell window from the project root. Wait for `A
 
 The current BF16 model needs more than 8 GB of GPU memory. On an 8 GB machine, run the website locally and connect it to a separate GPU machine for marking and tutoring.
 
-### Run marking and tutoring in Colab
+### Run the website in Colab
 
-[Open the notebook in Colab](https://colab.research.google.com/github/benkuan08/econreview-comp4431/blob/main/notebooks/econreview-colab.ipynb) and select a GPU runtime. An A100 gives the BF16 model room for the adapter and generation. Rehearse on an L4 before relying on it for a presentation. The notebook uses the Colab runtime disk for model downloads by default. Set `MODEL_FOLDER` to reuse a checkpoint already in Drive. It uses the same backend to preview an optional scan, confirm text, mark an answer and tutor a missed point inside the notebook. Colab can reclaim idle runtimes and available GPUs vary. [Colab FAQ](https://research.google.com/colaboratory/faq.html)
+[Open the notebook in Colab](https://colab.research.google.com/github/benkuan08/econreview-comp4431/blob/main/notebooks/econreview-colab.ipynb), select **L4 GPU** if available, and run the first four code cells through **Open EconReview**. The full website appears under that cell. Rehearse a short answer through marking, a missed point, and a tutor reply. For a scan, confirm the text manually if you have no Google OCR credentials in Colab.
+
+The notebook uses Colab's private cell callbacks to connect the website to the two services in the same runtime. The model downloads to the runtime disk by default. Set `MODEL_FOLDER` to reuse a checkpoint already in Drive. The L4 has limited memory for the BF16 model, so switch to an A100 if it runs out. Colab can reclaim idle runtimes and available GPUs vary. [Colab notebook callbacks](https://colab.research.google.com/notebooks/snippets/advanced_outputs.ipynb) · [Colab FAQ](https://research.google.com/colaboratory/faq.html)
 
 ### Run the live demo with AutoDL
 

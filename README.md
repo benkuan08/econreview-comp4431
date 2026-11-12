@@ -46,7 +46,7 @@ Do not double-click `frontend/index.html`: the Python server supplies the API an
 
 For a presentation from your laptop, see [Run the live demo with AutoDL](backend/README.md#run-the-live-demo-with-autodl). The website and question bank run locally, and an SSH tunnel connects the backend to the model on AutoDL.
 
-To use a friend's existing model download on Windows, follow [the local model setup](backend/README.md#use-an-existing-model-on-windows). To run marking and tutoring inside a GPU notebook, [open EconReview in Colab](https://colab.research.google.com/github/benkuan08/econreview-comp4431/blob/main/notebooks/econreview-colab.ipynb).
+To use a friend's existing model download on Windows, follow [the local model setup](backend/README.md#use-an-existing-model-on-windows). To run the full website and model in a GPU notebook, [open EconReview in Colab](https://colab.research.google.com/github/benkuan08/econreview-comp4431/blob/main/notebooks/econreview-colab.ipynb).
 
 ## Learning workflow
 
