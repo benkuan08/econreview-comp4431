@@ -83,7 +83,7 @@ The current BF16 model needs more than 8 GB of GPU memory. On an 8 GB machine, r
 
 ### Run the website in Colab
 
-[Open the notebook in Colab](https://colab.research.google.com/github/benkuan08/econreview-comp4431/blob/main/notebooks/econreview-colab.ipynb), select **L4 GPU** if available, and run the first four code cells through **Open EconReview**. Click **Open EconReview in a new tab** and leave Colab open and connected. Rehearse a short answer through marking, a missed point, and a tutor reply. If the tab reports a stopped service, run **Start EconReview** again and read its startup messages.
+[Open the notebook in Colab](https://colab.research.google.com/github/benkuan08/econreview-comp4431/blob/main/notebooks/econreview-colab.ipynb), select **L4 GPU** if available, and run the first four code cells through **Open EconReview**. Click **Open EconReview in a new tab** and leave Colab open and connected. Rehearse a short answer through marking, a missed point, and a tutor reply. If the tab reports a stopped service, run **Start EconReview** again and read its startup messages. If the tab cannot load the question bank, select `OPEN_IN_NOTEBOOK` and rerun **Open EconReview** to use the same website inside Colab.
 
 For Google OCR, upload your Vision service-account JSON to Colab through the Files panel. Set `OCR_CREDENTIALS_FILE` to the file's `/content/` path in the first cell. For PDF OCR, also set `OCR_GCS_BUCKET` to a private bucket the service account can access. You can enter the scan text manually when OCR is unavailable. [Vision authentication](https://docs.cloud.google.com/vision/docs/authentication) · [PDF OCR](https://docs.cloud.google.com/vision/docs/pdf)
 

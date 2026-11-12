@@ -1,9 +1,31 @@
 // The scoped fetch carries requests from the tab back to the notebook's private workspace.
+let workspaceRequestId = 0;
 async function callWorkspace(operation, ...args) {
-  if (!window.econreviewInvoke) {
+  const port = window.econreviewPort;
+  if (port) {
+    const id = ++workspaceRequestId;
+    return new Promise((resolve, reject) => {
+      const timer = setTimeout(() => {
+        port.removeEventListener('message', receive);
+        reject(new Error('Colab did not respond. Keep the notebook connected and rerun Open EconReview.'));
+      }, 30000);
+      function receive({data}) {
+        if (data.id !== id) return;
+        clearTimeout(timer);
+        port.removeEventListener('message', receive);
+        if (data.error) reject(new Error(data.error));
+        else resolve(data.value);
+      }
+      port.addEventListener('message', receive);
+      port.start();
+      port.postMessage({id, operation, args});
+    });
+  }
+  const kernel = window.google?.colab?.kernel;
+  if (!kernel?.invokeFunction) {
     throw new Error('Open EconReview from its connected Colab notebook.');
   }
-  const reply = await window.econreviewInvoke('econreview.workspace', [operation, ...args], {});
+  const reply = await kernel.invokeFunction('econreview.workspace', [operation, ...args], {});
   const data = reply?.data?.['application/json'];
   if (!data) throw new Error('The workspace did not respond. Check the Colab backend cell.');
   return data;

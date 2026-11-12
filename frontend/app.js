@@ -4,7 +4,7 @@ import {demoQuestions} from './demo.js';
 const $ = (selector, root=document) => root.querySelector(selector);
 const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const multiline = value => esc(value).replace(/\n/g, '<br>');
-const state = {demo:true, view:'upload', tab:'marking', question:demoQuestions[2], questions:[],
+const state = {demo:true, view:'upload', tab:'marking', question:demoQuestions[2], questions:[], questionError:'',
   submissions:[], submission:null, activeAnswer:null, grade:null, document:null, page:0,
   pageUrls:new Map(), zoom:100, selecting:false, regions:[], transcript:null, answerDraft:'', session:null,
   busy:'', evidence:[], revisionMode:false};
@@ -106,11 +106,16 @@ function renderDocument(q) {
 }
 
 function renderUpload() {
-  return `<div class="upload-layout"><section class="upload-card"><div class="upload-card-heading"><span class="upload-symbol">${icon('scan')}</span><div><h2>Bring your answer into focus.</h2><p>A scan, a photo, or simply your own words.</p></div></div><form id="upload-form"><div class="upload-drop" id="upload-drop"><span class="upload-art">${icon('mark')}<span>${icon('plus')}</span></span><h3>Drop your response here</h3><p>or choose a file from your computer</p><label class="btn" for="upload-input">${icon('upload')}Choose a file</label><input type="file" name="file" id="upload-input" accept="image/jpeg,image/png,application/pdf" required><span class="upload-file-label" id="upload-file-label">PDF, JPG or PNG · up to 20 MB</span></div><div class="upload-fields"><label class="form-field"><span>What are you uploading?</span><select name="purpose" id="upload-purpose"><option value="student_answer">A student answer</option><option value="question">A question to find in the bank</option></select></label><label class="form-field" id="upload-question-field"><span>Match it to a question</span><select name="question_id" required><option value="">Choose a question…</option>${questionOptions()}</select><small>The marking guidance comes from the selected question.</small></label></div><div class="upload-form-footer"><span>${icon('lock')}Saved locally. OCR runs when you choose.</span><button class="btn primary" type="submit" ${state.busy?'disabled':''}>${state.busy?'Uploading…':'Open workspace'}${icon('arrow')}</button></div><div class="form-error" id="upload-error" role="alert"></div></form></section><aside class="upload-guide"><div class="guide-brand"><span class="emblem"><img src="/assets/polyu-logo.svg" alt="PolyU emblem"></span><span>COMP4431<br><small>ECONOMICS LEARNING PROJECT</small></span></div><div class="eyebrow">From an answer to understanding</div><h2>More than<br>a mark.</h2><p>Your answer is the beginning.<br>Make the next step count.</p><ol class="guide-steps"><li><span>01</span><div><strong>Confirm what you wrote</strong><p>Check the scanned text, with your original answer beside it.</p></div></li><li><span>02</span><div><strong>See where marks were missed</strong><p>Understand the feedback against the question’s marking points.</p></div></li><li><span>03</span><div><strong>Click a point. Work it through.</strong><p>A tutor probes the concept, explains, and checks again.</p></div></li></ol><div class="guide-footer">${icon('sparkle')}One workspace. A clearer next step.</div></aside></div><div class="type-instead"><span>${icon('text')}No scan? Start with a typed answer.</span>${btn('new-practice','Type an answer','arrow','ghost')}</div>`;
+  return `<div class="upload-layout"><section class="upload-card"><div class="upload-card-heading"><span class="upload-symbol">${icon('scan')}</span><div><h2>Bring your answer into focus.</h2><p>A scan, a photo, or simply your own words.</p></div></div><form id="upload-form"><div class="upload-drop" id="upload-drop"><span class="upload-art">${icon('mark')}<span>${icon('plus')}</span></span><h3>Drop your response here</h3><p>or choose a file from your computer</p><label class="btn" for="upload-input">${icon('upload')}Choose a file</label><input type="file" name="file" id="upload-input" accept="image/jpeg,image/png,application/pdf" required ${state.questions.length?'':'disabled'}><span class="upload-file-label" id="upload-file-label">PDF, JPG or PNG · up to 20 MB</span></div><div class="upload-fields"><label class="form-field"><span>What are you uploading?</span><select name="purpose" id="upload-purpose" ${state.questions.length?'':'disabled'}><option value="student_answer">A student answer</option><option value="question">A question to find in the bank</option></select></label><label class="form-field" id="upload-question-field"><span>Match it to a question</span><select name="question_id" required ${state.questions.length?'':'disabled'}><option value="">Choose a question…</option>${questionOptions()}</select><small>The marking guidance comes from the selected question.</small></label></div><div class="upload-form-footer"><span>${icon('lock')}Saved locally. OCR runs when you choose.</span><button class="btn primary" type="submit" ${state.busy||!state.questions.length?'disabled':''}>${state.busy?'Uploading…':'Open workspace'}${icon('arrow')}</button></div><div class="form-error" id="upload-error" role="alert"></div></form>${state.questions.length?'':questionBankNotice()}</section><aside class="upload-guide"><div class="guide-brand"><span class="emblem"><img src="/assets/polyu-logo.svg" alt="PolyU emblem"></span><span>COMP4431<br><small>ECONOMICS LEARNING PROJECT</small></span></div><div class="eyebrow">From an answer to understanding</div><h2>More than<br>a mark.</h2><p>Your answer is the beginning.<br>Make the next step count.</p><ol class="guide-steps"><li><span>01</span><div><strong>Confirm what you wrote</strong><p>Check the scanned text, with your original answer beside it.</p></div></li><li><span>02</span><div><strong>See where marks were missed</strong><p>Understand the feedback against the question’s marking points.</p></div></li><li><span>03</span><div><strong>Click a point. Work it through.</strong><p>A tutor probes the concept, explains, and checks again.</p></div></li></ol><div class="guide-footer">${icon('sparkle')}One workspace. A clearer next step.</div></aside></div><div class="type-instead"><span>${icon('text')}No scan? Start with a typed answer.</span>${btn('new-practice','Type an answer','arrow','ghost',state.questions.length?'':'disabled')}</div>`;
 }
 
 function questionOptions(selected='') {
   return state.questions.map(q=>`<option value="${q.id}" ${q.id===selected?'selected':''}>${sourceOf(q)} · Q${esc(labelOf(q))} · ${q.marks} mark${q.marks===1?'':'s'} · ${esc(q.question.slice(0,100))}${q.question.length>100?'…':''}</option>`).join('');
+}
+
+function questionBankNotice() {
+  if (!state.questionError) return '<div class="notice" role="status">Loading the question bank…</div>';
+  return `<div class="notice" role="alert">Could not load the question bank. ${esc(state.questionError)} ${btn('retry-questions','Retry question bank','refresh','compact')}</div>`;
 }
 
 function pointTitle(point) {
@@ -176,6 +181,7 @@ function submissionTable() {
 }
 
 function renderBank(filter='') {
+  if (!state.questions.length) return questionBankNotice();
   const questions=state.questions.filter(q=>!filter||`${q.question} ${q.q_id}`.toLowerCase().includes(filter.toLowerCase()));
   return `<div class="table-heading" style="padding:0 0 18px;border:0"><span class="small muted">${state.questions.length} questions from your Economics corpus</span><input class="search-input" id="question-search" placeholder="Search questions…" aria-label="Search questions" value="${esc(filter)}"></div><div class="question-list" id="bank-list">${questions.length?questions.map(q=>`<article class="bank-card"><span class="bank-symbol">${icon('book')}</span><div class="bank-info"><h3>${esc(q.question)}</h3><p><span>${sourceOf(q)} · Q${esc(labelOf(q))}</span><span>${q.marks} marks</span><span>${q.scheme==='holistic'?'Best-fit levels':'Points scheme'}</span></p></div>${btn('choose-practice','Practise','chevron','compact',`data-id="${esc(q.id)}"`)}</article>`).join(''):empty('No matching questions','Try another search.','book')}</div>`;
 }
@@ -196,6 +202,15 @@ async function loadQuestions() {
     if (page.length<100) break;
   }
   state.questions=records;
+  if (!records.length) throw new Error('The backend returned no questions.');
+}
+
+async function refreshQuestionBank() {
+  state.questionError='';
+  render();
+  try {await loadQuestions();}
+  catch(error) {state.questionError=error.message;}
+  render();
 }
 
 async function loadQuestion(id) {
@@ -441,6 +456,7 @@ document.addEventListener('click',async event=>{
     if (action==='start-tutor'||action==='focus-point') {event.preventDefault();await startTutor(button.dataset.mpId);}
     if (action==='open-submission') await openSubmission(button.dataset.id);
     if (action==='refresh') {await refreshData();render();toast('Workspace refreshed.');}
+    if (action==='retry-questions') await refreshQuestionBank();
     if (action==='stop-tutor') {await api(`/tutoring-sessions/${state.session.id}/stop`,{method:'POST'});state.session=await api(`/tutoring-sessions/${state.session.id}`);render();}
     if (action==='latest-grade') {state.grade=await api(`/grades/${state.session.latest_grade_id}`);state.tab='marking';render();}
     if (action==='revise') modal('Revise your exam answer',`<p class="body-copy">Use what you have just explored. Your original answer and rubric stay unchanged.</p><form id="revision-form"><label class="form-field"><span>Your revised answer</span><textarea name="answer" required maxlength="40000" style="min-height:200px">${esc(state.answerDraft)}</textarea></label><button class="btn primary full" type="submit">Mark revised answer ${icon('arrow')}</button><p class="form-error" role="alert"></p></form>`);
@@ -461,9 +477,10 @@ window.addEventListener('hashchange',()=>{const view=location.hash.slice(1).spli
 async function bootstrap() {
   const [view,query='']=location.hash.slice(1).split('?');
   if(viewTitles[view])state.view=view;
-  render();
+  const bankReady=refreshQuestionBank();
+  const activityReady=refreshData().catch(error=>toast(`Could not load saved activity: ${error.message}`,true));
   try {
-    await Promise.all([loadQuestions(),refreshData()]);
+    await bankReady;
     const params=new URLSearchParams(query);
     if(view==='workspace'&&params.get('submission')) await openSubmission(params.get('submission'));
     else if(view==='workspace'&&params.get('document')) {
@@ -475,7 +492,8 @@ async function bootstrap() {
       state.regions=state.transcript?.regions||[];state.answerDraft=state.transcript?.text||state.document.ocr?.text||'';
       state.tab=state.transcript?'marking':'text';await loadPage();
     } else if(view==='workspace'&&params.get('question'))await beginPractice(params.get('question'));
-    render();
+    await activityReady;
+    if (state.view!=='upload') render();
   } catch(error){toast(`Could not open this local workspace: ${error.message}`,true);}
 }
 bootstrap();

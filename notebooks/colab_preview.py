@@ -104,8 +104,19 @@ def launcher_html(project):
       return;
     }}
     try {{
+      const channel = new MessageChannel();
+      channel.port1.onmessage = async ({{data: {{id, operation, args}}}}) => {{
+        try {{
+          const reply = await kernel.invokeFunction('econreview.workspace', [operation, ...args], {{}});
+          const value = reply?.data?.['application/json'];
+          if (value == null) throw new Error('Colab returned no workspace data. Run Open EconReview again.');
+          channel.port1.postMessage({{id, value}});
+        }} catch (error) {{
+          channel.port1.postMessage({{id, error: error?.message || String(error)}});
+        }}
+      }};
       tab.document.open();
-      tab.econreviewInvoke = kernel.invokeFunction.bind(kernel);
+      tab.econreviewPort = channel.port2;
       tab.document.write({page_json});
       tab.document.close();
       status.textContent = 'EconReview opened. Leave this notebook connected.';
@@ -117,7 +128,7 @@ def launcher_html(project):
 }})();</script>"""
 
 
-def show_preview(project):
+def show_preview(project, in_notebook=False):
     from google.colab import output
     from IPython.display import HTML, JSON, display
 
@@ -128,4 +139,4 @@ def show_preview(project):
         return JSON(handlers[operation](*args))
 
     output.register_callback("econreview.workspace", dispatch)
-    display(HTML(launcher_html(project)))
+    display(HTML(preview_html(project) if in_notebook else launcher_html(project)))

@@ -54,8 +54,8 @@
     },
     {
       "path": "backend/README.md",
-      "bytes": 16579,
-      "sha256": "e3341c80f263cb8284bcb8e1d817f714102478aacdffb83cb41ee0ed2952f92e"
+      "bytes": 16715,
+      "sha256": "8af8c0ce5aafc602ae7ee2aa685e5f1679c638cef62d1d879a537665010ccd2d"
     },
     {
       "path": "backend/requirements.lock.txt",
@@ -104,8 +104,8 @@
     },
     {
       "path": "frontend/app.js",
-      "bytes": 51831,
-      "sha256": "920b05267e62b36bdd6b118276e7fed4b841545fae0039df16fa6badbfa677ef"
+      "bytes": 52958,
+      "sha256": "cde8cdc22cc8841aa78567649f196e62ecb11098c633c2a961128a1aaba3cbbd"
     },
     {
       "path": "frontend/assets/favicon.svg",
@@ -149,8 +149,8 @@
     },
     {
       "path": "frontend/styles.css",
-      "bytes": 35642,
-      "sha256": "8f7e22b02be45ec321c28a0a0defd5f3b367be73fa5231026eba58e8154864a5"
+      "bytes": 35687,
+      "sha256": "4d7dbb3391e82846134c3469641c9f38c6c1a2b96ec94ab0293f9e366d1ea884"
     },
     {
       "path": "knowledge_graph.json",
@@ -159,18 +159,18 @@
     },
     {
       "path": "notebooks/colab_preview.js",
-      "bytes": 2226,
-      "sha256": "e81579aab7597344c4945e889f850c3deded6bd8257c78c2b158b4e925594ea1"
+      "bytes": 3028,
+      "sha256": "bd79674f6f7872a9acce88ca66b35521c793c9aef79786b8a9166c01d605d17d"
     },
     {
       "path": "notebooks/colab_preview.py",
-      "bytes": 6081,
-      "sha256": "1fa7bc189561f57026ab8ba34372a36ec7b39b956705fcdea7694d0b0f0a8b08"
+      "bytes": 6718,
+      "sha256": "cbce5bc2f3eb89deab71127f12c8440a9e74db518f98e9ad9df2930ecffb0fdb"
     },
     {
       "path": "notebooks/econreview-colab.ipynb",
-      "bytes": 18639,
-      "sha256": "af4eb5dabbe1ab41f0fada8eda833adc1fcf7b3154ba7144efa2473256a43ddc"
+      "bytes": 18866,
+      "sha256": "0c13d4f0be3d768b9227687738ff1c41a49da1d8f19bc2c49f1c2780e8699190"
     },
     {
       "path": "Prompts/diagnoser.txt",
