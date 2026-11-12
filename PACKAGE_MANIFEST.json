@@ -1,16 +1,16 @@
 {
   "project": "econreview-comp4431",
-  "created_at_utc": "2026-11-06T05:14:42.043061+00:00",
+  "created_at_utc": "2026-11-12T06:02:31.701380+00:00",
   "files": [
     {
       "path": ".gitignore",
-      "bytes": 284,
-      "sha256": "2a1dd260db942a48c8a1bc244c7b6bd6c34f018ee4830c50f2947493d918b025"
+      "bytes": 292,
+      "sha256": "7efa06b3dffc1505f683ef5ec47cccc29959a1d095394cbe0731f4b67f09544f"
     },
     {
       "path": "backend/.env.example",
-      "bytes": 716,
-      "sha256": "e4554b51e1036bc986a2a2fa023979748809f850ffafacffa642103f9376da62"
+      "bytes": 864,
+      "sha256": "78e2d6c2c34e23930ae5d9ea6310d1856a125bbd9552bdb32d3e9c71b04e78b6"
     },
     {
       "path": "backend/__init__.py",
@@ -29,8 +29,8 @@
     },
     {
       "path": "backend/config.py",
-      "bytes": 1670,
-      "sha256": "e178ea6ef74fd38f4866745771ebe0cb779b979f7e243ddf92f4a2efa630b6b1"
+      "bytes": 3002,
+      "sha256": "cf9923f8c3cc45ee001133c19456272657e7e82499845ee1e5e329a026cbe25a"
     },
     {
       "path": "backend/db.py",
@@ -39,8 +39,8 @@
     },
     {
       "path": "backend/gpu_service.py",
-      "bytes": 2124,
-      "sha256": "6d9d1435d58159c4539f3d298d619fddf9ad7cf664245a7f6734f267e92b7013"
+      "bytes": 2304,
+      "sha256": "614ae43db9e50435db2e0e5dddbbbb773cdc22849e53f42964ccb114ab70ddb0"
     },
     {
       "path": "backend/jobs.py",
@@ -54,8 +54,8 @@
     },
     {
       "path": "backend/README.md",
-      "bytes": 9230,
-      "sha256": "132df85308e92516beca93b3085ace4f69fb5c495cb0443c8a64c7d1a39639de"
+      "bytes": 15775,
+      "sha256": "121bd2c50e7603bb6ec50f406bed4c953ea62d7fb81b58f393b7138bbbd78637"
     },
     {
       "path": "backend/requirements.lock.txt",
@@ -81,6 +81,11 @@
       "path": "backend/schemas.py",
       "bytes": 3228,
       "sha256": "1977d0805c83f4618849a20124155849bbce1eb61dc32ca55dcbf3bd4ca684db"
+    },
+    {
+      "path": "backend/setup-local-model.ps1",
+      "bytes": 2130,
+      "sha256": "2e66f377f59a7121e3bc223c198902935f23cd7f82dbe33036b2374a1c7ac9ab"
     },
     {
       "path": "backend/tests/test_local.py",
@@ -153,6 +158,11 @@
       "sha256": "42b78c5bb175326954e86951dfd90139b5340b3c40b823142422647247aeecff"
     },
     {
+      "path": "notebooks/econreview-colab.ipynb",
+      "bytes": 12793,
+      "sha256": "bd0fc2242bcc1510168ef220cd1b5a8d2fbcb6378cc2ba1605befe3e9d74d6b4"
+    },
+    {
       "path": "Prompts/diagnoser.txt",
       "bytes": 1110,
       "sha256": "5fa5e247ae648d10431d7ae721cb0e7bb9e3869df7204a88fcae131b2e46b8a2"
@@ -189,8 +199,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 5897,
-      "sha256": "2a276bf7a4d3934c10cd8f44461cf1ef9d2a4d29a5a892b8659651df95b0e879"
+      "bytes": 6489,
+      "sha256": "54dfe5f815b4fcccea886e495fe1ea356bf32ff13730ae9d6838f3dd3b73fc6b"
     },
     {
       "path": "scripts/download_adapter.py",
@@ -198,9 +208,14 @@
       "sha256": "80323729ac1dee01d3d552b2a9aaff15f650bf44c24852cdb4432b9c27936732"
     },
     {
+      "path": "scripts/download_base_model.py",
+      "bytes": 7411,
+      "sha256": "2248813e4ae033d460d8e39eee9e33b35c517156979cf992c8e5519f392d536f"
+    },
+    {
       "path": "scripts/package_project.py",
-      "bytes": 5286,
-      "sha256": "ab4645e1f2576cf8c8f5e5677a66951872f4a99ce7c2bfb3d9b2dcdc2077b164"
+      "bytes": 5309,
+      "sha256": "fac617e7e9e1af41f060e797621e72038a83fe6addbbf801272a7118ea84385d"
     },
     {
       "path": "training/data.py",
@@ -228,9 +243,14 @@
       "sha256": "5c4a0773193ed827283b3f1d92f1e37500ee0b6bd07ee77f2b8f769f98b50d91"
     },
     {
+      "path": "training/requirements-inference.txt",
+      "bytes": 148,
+      "sha256": "6add5cb43df462febf14f7b505af0d94fca3af0c47775063d0b792bef1a77a04"
+    },
+    {
       "path": "training/requirements.txt",
-      "bytes": 668,
-      "sha256": "3ef09b1be6b8529e5dc7b5f6a2d09ab6476aebbab9c401f7682620323237475e"
+      "bytes": 361,
+      "sha256": "eb3cc9c17ded31e50f79611eb35d3f03916801c4c1f1ef1048421c31a79f0b6b"
     },
     {
       "path": "training/train_lora.py",

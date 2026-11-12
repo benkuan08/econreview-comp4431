@@ -44,6 +44,10 @@ Do not double-click `frontend/index.html`: the Python server supplies the API an
 
 **Live OCR needs Google Cloud credentials. Live marking and tutoring need the private GPU model service.** Starting the local website alone does not establish those connections. The backend reports an unavailable service instead of inventing OCR text, a grade or a tutoring reply. See [backend setup](backend/README.md) for `.env`, Google OCR and model-service configuration.
 
+For a presentation from your laptop, see [Run the live demo with AutoDL](backend/README.md#run-the-live-demo-with-autodl). The website and question bank run locally, and an SSH tunnel connects the backend to the model on AutoDL.
+
+To use a friend's existing model download on Windows, follow [the local model setup](backend/README.md#use-an-existing-model-on-windows). To run marking and tutoring inside a GPU notebook, [open EconReview in Colab](https://colab.research.google.com/github/benkuan08/econreview-comp4431/blob/main/notebooks/econreview-colab.ipynb).
+
 ## Learning workflow
 
 The upload page leads to one combined workspace for text confirmation, marking and tutoring. Click a missed marking point to open a focused concept probe beside the original answer. The controller maps the point to the knowledge graph, judges the reply, teaches as needed and obtains fresh evidence before recording improvement.
@@ -75,7 +79,7 @@ Restore the weight file, checking its SHA256 against the locally verified traini
 python scripts/download_adapter.py
 ```
 
-The helper pins the recorded Hugging Face commit rather than downloading a moving branch. The full Qwen3.5 9B **base model** must be obtained separately; a LoRA adapter does not replace the base weights. See [training instructions](training/README.md) and [training results](training_output/shared-economics/RESULTS.md).
+The helper pins the recorded Hugging Face commit. Run `python scripts/download_base_model.py` to download the matching Qwen3.5-9B-Base checkpoint into `models/Qwen3.5-9B-Base`. The GPU service loads that checkpoint with the adapter. See [GPU setup](backend/README.md#shared-model) and [training results](training_output/shared-economics/RESULTS.md).
 
 ## Why backend_data and the virtual environment are excluded
 

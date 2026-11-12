@@ -11,7 +11,7 @@ import zipfile
 from download_adapter import REPOSITORY, REVISION, EXPECTED_SHA256, EXPECTED_BYTES
 
 ROOT = Path(__file__).resolve().parents[1]
-FOLDERS = ("frontend", "backend", "Prompts", "training", "training_output", "scripts")
+FOLDERS = ("frontend", "backend", "Prompts", "training", "training_output", "scripts", "notebooks")
 ROOT_FILES = ("README.md", ".gitignore", "question_records.training.json", "knowledge_graph.json")
 OMITTED_WEIGHT = "training_output/shared-economics/adapter/adapter_model.safetensors"
 EXCLUDED_PARTS = {".git", "__pycache__", ".pytest_cache", ".cache", ".venv-backend", "backend_data", "exports"}
@@ -58,7 +58,7 @@ def main():
         if path.stat().st_size > 90 * 1024 * 1024:
             raise SystemExit(f"Unexpected large source file: {path.relative_to(ROOT)}")
         # Binary tokenizer/training artifacts are not interpreted as executables.
-        if path.suffix.lower() in {".py", ".js", ".json", ".jsonl", ".md", ".txt", ".log", ".ps1", ".html", ".css", ".jinja"}:
+        if path.suffix.lower() in {".py", ".js", ".json", ".jsonl", ".ipynb", ".md", ".txt", ".log", ".ps1", ".html", ".css", ".jinja"}:
             content = path.read_text(encoding="utf-8", errors="replace")
             for label, pattern in SECRET_PATTERNS.items():
                 if pattern.search(content):

@@ -28,7 +28,12 @@ async def lifespan(app):
         raise RuntimeError("Set BACKEND_MODEL_TOKEN before starting the GPU service")
     sys.path.insert(0, str(ROOT / "training"))
     from inference import generate, load_model
-    model, tokenizer = load_model(settings.model_id, settings.model_revision, settings.adapter)
+    adapter = settings.adapter
+    if adapter:
+        local_adapter = settings.root / adapter
+        if local_adapter.is_dir():
+            adapter = str(local_adapter.resolve())
+    model, tokenizer = load_model(settings.model_location(), settings.model_revision, adapter)
     app.state.settings, app.state.generate = settings, generate
     app.state.model, app.state.tokenizer = model, tokenizer
     app.state.lock = threading.Lock()
