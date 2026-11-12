@@ -136,6 +136,31 @@ def test_invalid_evidence_never_becomes_a_score(env):
     grade=client.get(f"/api/v1/grades/{queued['grade_id']}").json()
     assert grade['result'] is None and grade['status']=='needs_review'
     assert client.get(queued['status_url']).json()['status']=='failed' and len(model.calls)==2
+    assert grade['job']['id']==queued['job_id']
+    assert 'Evidence quote is absent' in grade['job']['error']
+    assert 'Invented student evidence' not in grade['job']['error']
+
+
+def test_fenced_grade_with_concept_ids(env):
+    client,app,model=env;q=question(env)
+    valid=result(q)
+    for point, rubric_point in zip(valid['point_results'], q['record']['marking_points']):
+        point['kp_id']=rubric_point['kp_id']
+    model.responses.append(('grader',f"```json\n{json.dumps(valid)}\n```"))
+    _,_,queued=submit(env,q);app.state.worker.run_once()
+    grade=client.get(f"/api/v1/grades/{queued['grade_id']}").json()
+    assert grade['status']=='provisional' and len(model.calls)==1
+    assert all('kp_id' not in point for point in grade['result']['point_results'])
+
+
+def test_rubric_only_output_requests_assessment_repair(env):
+    client,app,model=env;q=question(env)
+    model.responses += [('grader',q['record']),('grader',q['record'])]
+    _,_,queued=submit(env,q);app.state.worker.run_once()
+    grade=client.get(f"/api/v1/grades/{queued['grade_id']}").json()
+    assert grade['result'] is None and grade['job']['status']=='failed'
+    assert 'restated the rubric' in grade['job']['error']
+    assert 'return score and point_results' in model.calls[-1][1][-1]['content']
 
 
 def test_failed_grade_retry(env):

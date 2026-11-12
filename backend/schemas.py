@@ -12,6 +12,7 @@ class PointResult(Contract):
     status: Literal["met", "partial", "unmet", "uncertain"]
     evidence_quote: str
     reason: str
+    kp_id: str | None = Field(default=None, description="Optional concept ID copied from this marking point in the rubric")
 
 
 class GraderResult(Contract):

@@ -1,7 +1,9 @@
 """Shared model HTTP client, one repair, then strict semantic validation."""
 import json
+import re
 
 import httpx
+from pydantic import ValidationError
 
 from .schemas import DiagnoserResult, GraderResult, JudgeResult, ProberResult, TutorResult
 
@@ -33,6 +35,31 @@ def checked_quote(quote, texts):
         raise ValueError("Evidence quote is absent from the supplied student text")
 
 
+def parse_role_output(raw):
+    if not isinstance(raw, str):
+        return raw
+    text = raw.strip()
+    fenced = re.fullmatch(r"```(?:json)?[ \t]*\r?\n(.*?)\r?\n```", text, re.IGNORECASE | re.DOTALL)
+    return json.loads(fenced[1] if fenced else text)
+
+
+def validation_reason(error):
+    if isinstance(error, json.JSONDecodeError):
+        return "Expected a single valid JSON object"
+    if isinstance(error, ValidationError):
+        issues = []
+        for issue in error.errors(include_input=False, include_context=False, include_url=False)[:4]:
+            if issue["type"] == "extra_forbidden":
+                issues.append("Unexpected output field")
+            else:
+                location = ".".join(map(str, issue["loc"]))
+                issues.append(f"{location or 'Output'} — {issue['msg']}")
+        return ". ".join(issues)
+    if isinstance(error, ValueError):
+        return str(error)
+    return "The model returned an unexpected field structure"
+
+
 class Roles:
     def __init__(self, catalog, client):
         self.catalog, self.client = catalog, client
@@ -45,16 +72,19 @@ class Roles:
         for attempt in range(2):
             raw = self.client.complete(role, messages)
             try:
-                value = json.loads(raw) if isinstance(raw, str) else raw
+                value = parse_role_output(raw)
+                if role == "grader" and isinstance(value, dict) and "marking_points" in value and "point_results" not in value:
+                    raise ValueError("The reply restated the rubric. Assess the student answer and return score and point_results instead")
                 result = contract.model_validate(value).model_dump()
                 validate(result)
                 return result
             except (ValueError, TypeError, KeyError) as exc:
+                reason = validation_reason(exc)
                 if attempt:
-                    raise ReviewRequired(f"{role} failed output validation after one repair") from exc
+                    raise ReviewRequired(f"{role} response failed validation after one repair. {reason}") from exc
                 # The raw response remains data in the assistant turn, not new instructions.
                 messages += [{"role": "assistant", "content": raw if isinstance(raw, str) else json.dumps(raw)},
-                             {"role": "user", "content": "Repair the JSON using the original evidence. Validation error: " + str(exc)[:2000]}]
+                             {"role": "user", "content": "Repair the JSON using the original evidence. Validation error: " + reason}]
         raise AssertionError("Unreachable")
 
     def grade(self, snapshot):
@@ -65,9 +95,9 @@ class Roles:
                 raise ValueError("Question ID or maximum score differs from the pinned rubric")
             if result["scheme"] != snapshot["scheme"]:
                 raise ValueError("Wrong marking scheme")
-            ids = [p["mp_id"] for p in record["marking_points"]]
+            concept_ids = {p["mp_id"]: p["kp_id"] for p in record["marking_points"]}
             actual = [p["mp_id"] for p in result["point_results"]]
-            if sorted(ids) != sorted(actual):
+            if sorted(concept_ids) != sorted(actual):
                 raise ValueError("Include every marking point exactly once")
             score = result["score"]
             if (score is None) != result["needs_human_review"]:
@@ -75,6 +105,9 @@ class Roles:
             if score is not None and not 0 <= score <= record["marks"]:
                 raise ValueError("Score out of bounds")
             for point in result["point_results"]:
+                concept = point.pop("kp_id")
+                if concept is not None and concept != concept_ids[point["mp_id"]]:
+                    raise ValueError("Concept ID differs from the pinned marking point")
                 checked_quote(point["evidence_quote"], [answer])
             # Do not calculate holistic scores by summing diagnostic statuses.
         return self.run("grader", {**record, "scheme": snapshot["scheme"], "student_answer": answer}, validate)

@@ -263,7 +263,9 @@ def create_app(settings=None, model_client=None, ocr_client=None):
     @app.get("/api/v1/grades/{identifier}")
     def get_grade(identifier: str, db: Session = Depends(get_db)):
         grade = grade_owned(db, identifier)
+        job = db.scalar(select(Job).where(Job.key == f"grade:{grade.answer_id}"))
         return {"id": grade.id, "answer_id": grade.answer_id, "status": grade.status, "result": grade.result,
+                "job": {"id": job.id, "status": job.status, "error": job.error} if job else None,
                 "provisional": True,
                 "marking_points": [{"mp_id": p["mp_id"], "type": p["type"], "text": p["text"],
                                     "concept": app.state.catalog.graph[p["kp_id"]]["name"]}
@@ -281,7 +283,9 @@ def create_app(settings=None, model_client=None, ocr_client=None):
             raise HTTPException(409, "Only a failed scan or grade can be retried here")
         job.status, job.attempts, job.error = "queued", 0, None
         if job.kind == "grade":
-            db.get(Grade, job.payload["grade_id"]).status = "queued"
+            grade = db.get(Grade, job.payload["grade_id"])
+            grade.status = "queued"
+            grade.snapshot = {**grade.snapshot, "prompt_hash": digest(app.state.catalog.prompts["grader"])}
         db.commit()
         return reference(job)
 

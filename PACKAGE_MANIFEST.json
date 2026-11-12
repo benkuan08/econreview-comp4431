@@ -19,8 +19,8 @@
     },
     {
       "path": "backend/app.py",
-      "bytes": 20683,
-      "sha256": "026e8cbae0bc37dc73b15b3136d7f701ba2cca25d980f6e90fc1cf6ada89865f"
+      "bytes": 20997,
+      "sha256": "18e263d52f5116951eb5c9a464add48a537fed94183871ac30391b40c6bf26a6"
     },
     {
       "path": "backend/catalog.py",
@@ -69,8 +69,8 @@
     },
     {
       "path": "backend/roles.py",
-      "bytes": 7537,
-      "sha256": "58a5a6dcb066978731dab5c4fb22299e2f85299dbe320fd32f85db1d13b70f43"
+      "bytes": 9099,
+      "sha256": "d8a2811a508a23df3b2010f8721c93be32107ea7afef66de3079340fc2117581"
     },
     {
       "path": "backend/run.ps1",
@@ -79,8 +79,8 @@
     },
     {
       "path": "backend/schemas.py",
-      "bytes": 3228,
-      "sha256": "1977d0805c83f4618849a20124155849bbce1eb61dc32ca55dcbf3bd4ca684db"
+      "bytes": 3352,
+      "sha256": "106bcfe189926100847540934bdccf96302c2aa3ad90e5aa0a29e14e7db2164a"
     },
     {
       "path": "backend/setup-local-model.ps1",
@@ -89,8 +89,8 @@
     },
     {
       "path": "backend/tests/test_local.py",
-      "bytes": 13510,
-      "sha256": "241248cd4e8c17612d4b46d317840dd1406c3178ce60ccebc60279b926a2d3f2"
+      "bytes": 14794,
+      "sha256": "a216eb7f2a5e0dd8114aeeb711ea75280f12a17b1fd3b436d580a0cbbd0a356e"
     },
     {
       "path": "backend/tests/test_providers.py",
@@ -104,8 +104,8 @@
     },
     {
       "path": "frontend/app.js",
-      "bytes": 52958,
-      "sha256": "cde8cdc22cc8841aa78567649f196e62ecb11098c633c2a961128a1aaba3cbbd"
+      "bytes": 53084,
+      "sha256": "83e372f13a150e464d20dd4c7ecc6ea6d1b382393783d755034e4b4c627feb81"
     },
     {
       "path": "frontend/assets/favicon.svg",
@@ -179,8 +179,8 @@
     },
     {
       "path": "Prompts/grader.txt",
-      "bytes": 1341,
-      "sha256": "98c83e4e0ec6047c5d7fec1cb09218ff35752d46269d0998e71499fa1cfd3429"
+      "bytes": 1555,
+      "sha256": "b0d5e7631dd3c97feb0b50bc16924e2b3ab3ce5c2f21810d42e80a357d561fdc"
     },
     {
       "path": "Prompts/probe_judge.txt",
