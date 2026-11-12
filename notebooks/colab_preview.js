@@ -1,11 +1,9 @@
-// Colab runs this script in the notebook output frame. The scoped fetch below
-// carries requests to the private workspace without publishing its HTTP port.
+// The scoped fetch carries requests from the tab back to the notebook's private workspace.
 async function callWorkspace(operation, ...args) {
-  const kernel = window.google?.colab?.kernel;
-  if (!kernel?.invokeFunction) {
-    throw new Error('Run the website cell in a connected Colab notebook.');
+  if (!window.econreviewInvoke) {
+    throw new Error('Open EconReview from its connected Colab notebook.');
   }
-  const reply = await kernel.invokeFunction('econreview.workspace', [operation, ...args], {});
+  const reply = await window.econreviewInvoke('econreview.workspace', [operation, ...args], {});
   const data = reply?.data?.['application/json'];
   if (!data) throw new Error('The workspace did not respond. Check the Colab backend cell.');
   return data;

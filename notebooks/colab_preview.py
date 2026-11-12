@@ -1,6 +1,7 @@
-"""Serve the existing workspace inside a trusted Colab cell output."""
+"""Open the workspace in a browser tab connected to a trusted Colab output."""
 
 import base64
+import json
 import re
 from urllib.parse import urlsplit
 
@@ -42,8 +43,14 @@ class WorkspacePreview:
         body = bytes(self.incoming) if has_body else None
         self.incoming.clear()
         self.outgoing = b""
-        response = self.client.request(method, WORKSPACE + path, headers=headers, data=body,
-                                       allow_redirects=False, timeout=(3, 60))
+        try:
+            response = self.client.request(method, WORKSPACE + path, headers=headers, data=body,
+                                           allow_redirects=False, timeout=(3, 60))
+        except requests.exceptions.ConnectionError:
+            self.outgoing = json.dumps({
+                "detail": "The Colab website service is stopped. Return to the notebook and run Start EconReview."
+            }).encode("utf-8")
+            return {"status": 503, "type": "application/json", "length": len(self.outgoing), **self.response_chunk(0)}
         self.outgoing = response.content
         return {"status": response.status_code, "type": response.headers.get("Content-Type"),
                 "length": len(self.outgoing), **self.response_chunk(0)}
@@ -73,6 +80,43 @@ def preview_html(project):
     return f"<style>{css}</style>{body}<script>(() => {{\n{script}\n}})();</script>"
 
 
+def launcher_html(project):
+    page = ('<!doctype html><html lang="en"><head><meta charset="utf-8">'
+            '<meta name="viewport" content="width=device-width, initial-scale=1">'
+            '<title>EconReview</title></head><body>' + preview_html(project) + '</body></html>')
+    page_json = json.dumps(page).replace("<", "\\u003c")
+    return f"""<button id="econreview-open" type="button">Open EconReview in a new tab</button>
+<p id="econreview-status" role="status">Keep this Colab notebook and runtime connected while using the website.</p>
+<script>(() => {{
+  const button = document.getElementById('econreview-open');
+  const status = document.getElementById('econreview-status');
+  let tab;
+  button.addEventListener('click', () => {{
+    const kernel = window.google?.colab?.kernel;
+    if (!kernel?.invokeFunction) {{
+      status.textContent = 'Connect to Colab and run the Open EconReview cell again.';
+      return;
+    }}
+    if (tab && !tab.closed) {{ tab.focus(); return; }}
+    tab = window.open('about:blank', '_blank');
+    if (!tab) {{
+      status.textContent = 'Allow pop-ups for this Colab notebook, then click the button again.';
+      return;
+    }}
+    try {{
+      tab.document.open();
+      tab.econreviewInvoke = kernel.invokeFunction.bind(kernel);
+      tab.document.write({page_json});
+      tab.document.close();
+      status.textContent = 'EconReview opened. Leave this notebook connected.';
+    }} catch {{
+      tab.close();
+      status.textContent = 'The browser could not open the workspace tab. Try Chrome with pop-ups allowed for Colab.';
+    }}
+  }});
+}})();</script>"""
+
+
 def show_preview(project):
     from google.colab import output
     from IPython.display import HTML, JSON, display
@@ -84,4 +128,4 @@ def show_preview(project):
         return JSON(handlers[operation](*args))
 
     output.register_callback("econreview.workspace", dispatch)
-    display(HTML(preview_html(project)))
+    display(HTML(launcher_html(project)))

@@ -54,8 +54,8 @@
     },
     {
       "path": "backend/README.md",
-      "bytes": 16069,
-      "sha256": "710464035166c939f5c40c47ac9c2fc58f53dd2d70dccda40b88c48b6d21b58b"
+      "bytes": 16579,
+      "sha256": "e3341c80f263cb8284bcb8e1d817f714102478aacdffb83cb41ee0ed2952f92e"
     },
     {
       "path": "backend/requirements.lock.txt",
@@ -159,18 +159,18 @@
     },
     {
       "path": "notebooks/colab_preview.js",
-      "bytes": 2337,
-      "sha256": "4512f21995dc1307bd36495ff9e0c95b51c23a2f7ed8077910a400424feecabf"
+      "bytes": 2226,
+      "sha256": "e81579aab7597344c4945e889f850c3deded6bd8257c78c2b158b4e925594ea1"
     },
     {
       "path": "notebooks/colab_preview.py",
-      "bytes": 4062,
-      "sha256": "8063f8c99e46ede8d98a707b5e4ac165050356ed9248324b5cc1675b222b3159"
+      "bytes": 6081,
+      "sha256": "1fa7bc189561f57026ab8ba34372a36ec7b39b956705fcdea7694d0b0f0a8b08"
     },
     {
       "path": "notebooks/econreview-colab.ipynb",
-      "bytes": 15656,
-      "sha256": "4d6af5646a02a2ebd02211b0809b354802d460a87e4aca1b0d2cbcfac12e5294"
+      "bytes": 18639,
+      "sha256": "af4eb5dabbe1ab41f0fada8eda833adc1fcf7b3154ba7144efa2473256a43ddc"
     },
     {
       "path": "Prompts/diagnoser.txt",

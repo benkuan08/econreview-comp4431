@@ -83,7 +83,9 @@ The current BF16 model needs more than 8 GB of GPU memory. On an 8 GB machine, r
 
 ### Run the website in Colab
 
-[Open the notebook in Colab](https://colab.research.google.com/github/benkuan08/econreview-comp4431/blob/main/notebooks/econreview-colab.ipynb), select **L4 GPU** if available, and run the first four code cells through **Open EconReview**. The full website appears under that cell. Rehearse a short answer through marking, a missed point, and a tutor reply. For a scan, confirm the text manually if you have no Google OCR credentials in Colab.
+[Open the notebook in Colab](https://colab.research.google.com/github/benkuan08/econreview-comp4431/blob/main/notebooks/econreview-colab.ipynb), select **L4 GPU** if available, and run the first four code cells through **Open EconReview**. Click **Open EconReview in a new tab** and leave Colab open and connected. Rehearse a short answer through marking, a missed point, and a tutor reply. If the tab reports a stopped service, run **Start EconReview** again and read its startup messages.
+
+For Google OCR, upload your Vision service-account JSON to Colab through the Files panel. Set `OCR_CREDENTIALS_FILE` to the file's `/content/` path in the first cell. For PDF OCR, also set `OCR_GCS_BUCKET` to a private bucket the service account can access. You can enter the scan text manually when OCR is unavailable. [Vision authentication](https://docs.cloud.google.com/vision/docs/authentication) · [PDF OCR](https://docs.cloud.google.com/vision/docs/pdf)
 
 The notebook uses Colab's private cell callbacks to connect the website to the two services in the same runtime. The model downloads to the runtime disk by default. Set `MODEL_FOLDER` to reuse a checkpoint already in Drive. The L4 has limited memory for the BF16 model, so switch to an A100 if it runs out. Colab can reclaim idle runtimes and available GPUs vary. [Colab notebook callbacks](https://colab.research.google.com/notebooks/snippets/advanced_outputs.ipynb) · [Colab FAQ](https://research.google.com/colaboratory/faq.html)
 
