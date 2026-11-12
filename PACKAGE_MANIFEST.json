@@ -169,8 +169,8 @@
     },
     {
       "path": "notebooks/econreview-colab.ipynb",
-      "bytes": 18866,
-      "sha256": "0c13d4f0be3d768b9227687738ff1c41a49da1d8f19bc2c49f1c2780e8699190"
+      "bytes": 19369,
+      "sha256": "0c483c4b15d4e132661e1031625c954c0fcd8652b2f41c33c2d457ceece18b4d"
     },
     {
       "path": "Prompts/diagnoser.txt",
