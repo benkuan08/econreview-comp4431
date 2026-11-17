@@ -50,6 +50,8 @@ To use a friend's existing model download on Windows, follow [the local model se
 
 ## Learning workflow
 
+![EconReview workflow from answer grading through diagnostic tutoring with the Grader, Diagnoser, Prober, Probe-Judge and Tutor agents](frontend/assets/econreview-agent-workflow.svg)
+
 The upload page leads to one combined workspace for text confirmation, marking and tutoring. Click a missed marking point to open a focused concept probe beside the original answer. The controller maps the point to the knowledge graph, judges the reply, teaches as needed and obtains fresh evidence before recording improvement.
 
 The initial curriculum is Pearson International GCSE Economics Paper 1. Point-based and holistic grading retain different scoring rules; holistic dimensions are not counted as individual marks. Grades remain experimental until tested against independently reviewed student attempts.

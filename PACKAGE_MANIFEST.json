@@ -108,6 +108,11 @@
       "sha256": "83e372f13a150e464d20dd4c7ecc6ea6d1b382393783d755034e4b4c627feb81"
     },
     {
+      "path": "frontend/assets/econreview-agent-workflow.svg",
+      "bytes": 6335,
+      "sha256": "c92229988b150905544906f716a4cc1ff00550f92e32797fcb7154e8c72fe934"
+    },
+    {
       "path": "frontend/assets/favicon.svg",
       "bytes": 245,
       "sha256": "bade92fd2f8d98a8891c4eaa2f3f9bc08a4d69155db9298b3af9ffd385468e42"
@@ -209,8 +214,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 6491,
-      "sha256": "5ed53727427a175248c79ce2f90251aa46344218c4627ef51f1a6fe849da3dad"
+      "bytes": 6675,
+      "sha256": "83c9d6e5953e0ce57060482261f2144b1c49366be6a83c392a7ba95e2e7e03e3"
     },
     {
       "path": "scripts/download_adapter.py",

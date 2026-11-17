@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">EconReview multi-agent workflow</title>
+  <desc id="desc">A student confirms an answer. The Grader evaluates it using the question bank rubric. Selecting a missed marking point starts the Diagnoser, Prober, Probe-Judge and Tutor cycle. The controller may check a prerequisite or select a fresh probe. Each agent role uses the same Qwen model with its own prompt.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0 0L8 4 0 8Z" fill="#59657d"/>
+    </marker>
+    <marker id="loop-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0 0L8 4 0 8Z" fill="#325f85"/>
+    </marker>
+    <style>
+      text {font-family:'Segoe UI',Arial,sans-serif;fill:#1c2740}
+      .title {font-size:48px;font-weight:700;letter-spacing:-1.2px}
+      .subtitle {font-size:22px;fill:#526079}
+      .heading {font-size:20px;font-weight:700;letter-spacing:2px}
+      .card-title {font-size:26px;font-weight:700}
+      .card-copy {font-size:18px;fill:#45516a}
+      .tag {font-size:13px;letter-spacing:1.5px;font-weight:700}
+      .grading {fill:#8e334a}
+      .tutoring {fill:#28577d}
+      .flow,.loop {fill:none;stroke-width:2.4;stroke-linejoin:round}
+      .flow {stroke:#59657d;marker-end:url(#arrow)}
+      .loop {stroke:#325f85;marker-end:url(#loop-arrow);stroke-dasharray:7 6}
+      .note {font-size:17px;fill:#36526d}
+      .flow-label {font-size:14px;font-weight:600;fill:#425571}
+      .model-title {font-size:22px;font-weight:700;fill:#fff}
+      .model-copy {font-size:18px;fill:#e4eaf4}
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="#fff"/>
+  <text class="title" x="52" y="73">EconReview multi-agent workflow</text>
+  <text class="subtitle" x="54" y="111">From a marked answer to a focused concept check</text>
+
+  <rect x="52" y="146" width="1496" height="198" rx="19" fill="#fbf3f5" stroke="#ead6dc"/>
+  <text class="heading grading" x="82" y="183">01  ANSWER ASSESSMENT</text>
+  <rect x="82" y="208" width="300" height="112" rx="12" fill="#fff" stroke="#e4cbd3"/>
+  <text class="card-title" x="102" y="246">Confirmed answer</text>
+  <text class="card-copy" x="102" y="276">Typed answer or scan with</text>
+  <text class="card-copy" x="102" y="299">OCR and text confirmation</text>
+
+  <rect x="461" y="208" width="300" height="112" rx="12" fill="#f3dfe6" stroke="#ba7b8e"/>
+  <text class="tag grading" x="481" y="231">AGENT</text>
+  <text class="card-title" x="481" y="262">Grader</text>
+  <text class="card-copy" x="481" y="291">Applies the question-bank rubric</text>
+
+  <rect x="839" y="208" width="300" height="112" rx="12" fill="#fff" stroke="#e4cbd3"/>
+  <text class="card-title" x="859" y="246">Provisional grade</text>
+  <text class="card-copy" x="859" y="276">Score and marking-point</text>
+  <text class="card-copy" x="859" y="299">feedback with evidence</text>
+
+  <rect x="1218" y="208" width="300" height="112" rx="12" fill="#fff" stroke="#e4cbd3"/>
+  <text class="card-title" x="1238" y="246">Select a missed point</text>
+  <text class="card-copy" x="1238" y="276">The selected marking point</text>
+  <text class="card-copy" x="1238" y="299">sets the tutoring focus</text>
+
+  <path class="flow" d="M382 264H454"/>
+  <path class="flow" d="M761 264H832"/>
+  <path class="flow" d="M1139 264H1211"/>
+
+  <rect x="52" y="410" width="1496" height="342" rx="19" fill="#f2f7fb" stroke="#d4e1ed"/>
+  <text class="heading tutoring" x="82" y="449">02  DIAGNOSTIC TUTORING</text>
+  <path class="flow" d="M1368 320V374H67V535H76"/>
+
+  <rect x="82" y="477" width="300" height="116" rx="12" fill="#deebf6" stroke="#8daecb"/>
+  <text class="tag tutoring" x="102" y="501">AGENT</text>
+  <text class="card-title" x="102" y="533">Diagnoser</text>
+  <text class="card-copy" x="102" y="560">Suggests why a point</text>
+  <text class="card-copy" x="102" y="582">may have been missed</text>
+
+  <rect x="461" y="477" width="300" height="116" rx="12" fill="#deebf6" stroke="#8daecb"/>
+  <text class="tag tutoring" x="481" y="501">AGENT</text>
+  <text class="card-title" x="481" y="533">Prober</text>
+  <text class="card-copy" x="481" y="560">Selects an unused question</text>
+  <text class="card-copy" x="481" y="582">from the knowledge graph</text>
+
+  <rect x="839" y="477" width="300" height="116" rx="12" fill="#deebf6" stroke="#8daecb"/>
+  <text class="tag tutoring" x="859" y="501">AGENT</text>
+  <text class="card-title" x="859" y="533">Probe-Judge</text>
+  <text class="card-copy" x="859" y="560">Assesses the student’s reply</text>
+  <text class="card-copy" x="859" y="582">and records evidence</text>
+
+  <rect x="1218" y="477" width="300" height="116" rx="12" fill="#deebf6" stroke="#8daecb"/>
+  <text class="tag tutoring" x="1238" y="501">AGENT</text>
+  <text class="card-title" x="1238" y="533">Tutor</text>
+  <text class="card-copy" x="1238" y="560">Explains the concept when</text>
+  <text class="card-copy" x="1238" y="582">the reply calls for coaching</text>
+
+  <path class="flow" d="M382 540H454"/>
+  <path class="flow" d="M761 540H832"/>
+  <text class="flow-label" x="798" y="527" text-anchor="middle">Reply</text>
+  <path class="flow" d="M1139 540H1211"/>
+  <text class="flow-label" x="1179" y="527" text-anchor="middle">Coach</text>
+
+  <path class="loop" d="M989 593V625H664V600"/>
+  <text class="note" x="827" y="618" text-anchor="middle">Check a prerequisite if needed</text>
+  <path class="loop" d="M1368 593V673H560V600"/>
+  <text class="note" x="966" y="665" text-anchor="middle">Select a fresh probe after coaching</text>
+
+  <line x1="82" y1="698" x2="1518" y2="698" stroke="#ccdbe9"/>
+  <text class="note" x="82" y="727">Tutor controller routes the next step and limits the session to six probe replies. A revised answer can be sent back to the Grader.</text>
+
+  <rect x="52" y="779" width="1496" height="63" rx="12" fill="#22344e"/>
+  <text class="model-title" x="82" y="818">Shared model</text>
+  <text class="model-copy" x="254" y="817">Qwen3.5-9B-Base + Economics LoRA</text>
+  <text class="model-copy" x="1518" y="817" text-anchor="end">One model with five role-specific prompts</text>
+</svg>
